@@ -190,6 +190,11 @@ h1.intro {
   border-bottom : none;
 }
 
+.page-title {
+  color          : $heading-color;
+  text-transform : initial;
+}
+
 /* Boxes */
 
 .single-service {
@@ -202,11 +207,8 @@ h1.intro {
   }
 }
 
-.home-azera-shop-luxury-product-wrap {
-  display  : block;
-  position : relative;
-
-  > a {
+.home-shop-product-wrap-all {
+  a {
     h3 {
       font-family    : 'Lato', Sans-serif;
       text-transform : uppercase;
@@ -219,42 +221,68 @@ h1.intro {
       color : $brand-primary;
     }
   }
+  .home-azera-shop-luxury-product-wrap {
+    display  : block;
+    position : relative;
 
-  .home-azera-shop-luxury-product-info {
-    position           : absolute;
-    top                : 0;
-    left               : 0;
-    bottom             : 0;
-    right              : 0;
-    opacity            : 0;
-    filter             : alpha(opacity=0);
-    -webkit-transition : all .3s ease;
-    transition         : all .3s ease;
-    background         : transparentize(#fff, .2);
-    padding            : 0 25px;
-  }
-  &:hover {
     .home-azera-shop-luxury-product-info {
-      opacity            : 1;
-      filter             : alpha(opacity=1);
+      position           : absolute;
+      top                : 0;
+      left               : 0;
+      bottom             : 0;
+      right              : 0;
+      opacity            : 0;
+      filter             : alpha(opacity=0);
       -webkit-transition : all .3s ease;
       transition         : all .3s ease;
+      background         : transparentize($heading-color, .1);
+      padding            : 0 25px;
+
+      .home-azera-shop-luxury-product-content {
+        color : #FFF;
+      }
     }
-  }
+    &:hover {
+      .home-azera-shop-luxury-product-info {
+        opacity            : 1;
+        filter             : alpha(opacity=1);
+        -webkit-transition : all .3s ease;
+        transition         : all .3s ease;
+      }
+    }
 
-  .home-azera-shop-luxury-product-title {
-    margin-top : 25%;
-    display    : block;
-  }
+    .home-azera-shop-luxury-product-title {
+      margin-top : 15%;
+      display    : block;
+      color      : #FFF;
+      h4 {
+        color          : #FFF;
+        font-family    : 'Lato';
+        text-transform : uppercase;
+        position       : relative;
+        &:after {
+          content          : '';
+          display          : block;
+          width            : 80%;
+          position         : relative;
+          margin           : 0 auto;
+          margin-top       : 35px;
+          margin-bottom    : 35px;
+          height           : 1px;
+          background-color : $brand-primary;
+        }
+      }
+    }
 
-  .home-azera-shop-luxury-add-to-cart-wrap {
-    > a {
-      background    : $brand-primary;
-      border-radius : 3px;
-      color         : #FFF;
-      padding       : 10px 20px;
-      display       : inline-block;
-      margin-top    : 10px;
+    .home-azera-shop-luxury-add-to-cart-wrap {
+      > a {
+        background    : $brand-primary;
+        border-radius : 3px;
+        color         : #FFF;
+        padding       : 10px 20px;
+        display       : inline-block;
+        margin-top    : 10px;
+      }
     }
   }
 }
@@ -449,6 +477,18 @@ h1.intro {
   margin-top : 10px;
 }
 
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current {
+  background-color : $heading-color;
+  color            : #FFF;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span {
+  min-width   : 45px !important;
+  line-height : 24px;
+  border      : 1px solid #e5e5e5;
+  color       : $heading-color;
+}
+
 .separator-mixin {
   position            : absolute;
   bottom              : -20px;
@@ -464,4 +504,102 @@ h1.intro {
   height              : 40px;
   background-repeat   : no-repeat;
   background-position : center;
+}
+
+/* Single post */
+.azera-featured-image {
+  height          : 200px;
+  position        : relative;
+  display         : block;
+  margin-top      : 35px;
+  background-size : cover;
+  h2 {
+    color      : #FFF;
+    text-align : center;
+    font-size  : 36px;
+    position   : relative;
+    z-index    : 1;
+    top        : 40%;
+  }
+  &:before {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    right      : 0;
+    bottom     : 0;
+    content    : '';
+    display    : block;
+    background : transparentize(#000, .5);
+  }
+}
+
+h1.single-title {
+  text-transform : initial;
+  color          : $heading-color;
+}
+
+.post-comments {
+  float : none;
+}
+
+.entry-content, .entry-content p, .entry-content span {
+  font-family : 'Lato', sans-serif;
+  font-size   : 15px;
+  color       : #717171;
+}
+
+#sidebar-secondary {
+  border-left : none;
+  .widget-title {
+    font-weight    : 400;
+    font-size      : 22px;
+    text-transform : initial;
+  }
+}
+
+.comment-list {
+  .reply {
+    top   : 20px;
+    right : 20px;
+  }
+  .comment {
+    > article {
+      padding      : 20px;
+      padding-left : 100px;
+      margin-left  : 0;
+    }
+  }
+  .comment-author {
+    img {
+      left   : 20px;
+      top    : 20px;
+      border : none;
+    }
+  }
+  .comment-metadata {
+    font-style : normal;
+    color      : $text-color;
+    a {
+      color : $text-color;
+    }
+  }
+  .says {
+    display : none;
+  }
+}
+
+.comment-form {
+  p {
+    padding-left : 0;
+  }
+  label {
+    position : relative;
+    left     : initial;
+    display  : block;
+  }
+}
+
+.comment-form .form-submit input, #recaptcha-submit-btn-area input {
+  background-color : $brand-primary;
+  border-color     : $brand-primary;
 }
