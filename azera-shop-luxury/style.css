@@ -26,7 +26,18 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #e0b48e; }
   a:hover, a:focus, a:active {
-    color: #e0b48e; }
+    color: #e0b48e;
+    text-decoration: underline; }
+  a:visited {
+    text-decoration: none; }
+
+ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager) li:before {
+  content: "\f105";
+  font-family: 'FontAwesome';
+  display: inline-block;
+  margin-left: 0;
+  width: 15px;
+  color: #e0b48e; }
 
 blockquote {
   font-style: italic;
@@ -557,7 +568,10 @@ h1.single-title {
     border-left: none;
     height: 41px;
     width: 41px;
-    line-height: 41px; }
+    line-height: 41px;
+    color: #1e3046; }
+    .azera-luxury-pager li a {
+      color: #1e3046; }
     .azera-luxury-pager li:first-of-type {
       border-left: 1px solid #e1e1e1;
       border-top-left-radius: 5px;
@@ -618,6 +632,8 @@ h1.single-title {
     border-bottom: 1px solid #e0b48e; }
     .edd_download_inner .edd_price_options > ul > li {
       border-top: none; }
+      .edd_download_inner .edd_price_options > ul > li:before {
+        display: none; }
       .edd_download_inner .edd_price_options > ul > li label {
         width: 100%; }
       .edd_download_inner .edd_price_options > ul > li input[type="radio"], .edd_download_inner .edd_price_options > ul > li input[type="checkbox"] {

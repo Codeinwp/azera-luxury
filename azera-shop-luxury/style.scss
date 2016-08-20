@@ -33,7 +33,24 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color : $brand-primary;
   &:hover, &:focus, &:active {
-    color : $brand-primary;
+    color           : $brand-primary;
+    text-decoration : underline;
+  }
+  &:visited {
+    text-decoration : none;
+  }
+}
+
+ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager) {
+  li {
+    &:before {
+      content     : "\f105";
+      font-family : 'FontAwesome';
+      display     : inline-block;
+      margin-left : 0;
+      width       : 15px;
+      color       : $brand-primary;
+    }
   }
 }
 
@@ -747,6 +764,10 @@ h1.single-title {
     height      : 41px;
     width       : 41px;
     line-height : 41px;
+    color       : $heading-color;
+    a {
+      color : $heading-color;
+    }
     &:first-of-type {
       border-left               : 1px solid #e1e1e1;
       border-top-left-radius    : 5px;
@@ -834,6 +855,9 @@ h1.single-title {
       border-bottom  : 1px solid $brand-primary;
       > li {
         border-top : none;
+        &:before {
+          display : none;
+        }
         label {
           width : 100%;
         }

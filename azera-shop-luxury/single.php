@@ -15,9 +15,11 @@
 <div class="content-wrap">
 	<?php if ( has_post_thumbnail() ) { ?>
 	<div class="azera-featured-image" style="background-image:url('<?php echo get_the_post_thumbnail_url() ?>')">
+	<?php } else { ?>
+	<div class="azera-featured-image" style="background-image:url('<?php echo get_header_image() ?>')">
 	<?php } ?>
 		<h2><?php echo get_the_title() ?></h2>
-	<?php if ( has_post_thumbnail() ) { ?>
+	<?php if ( has_post_thumbnail() || has_header_image()) { ?>
 	</div>
 	<?php } ?>
 	<div class="container">
