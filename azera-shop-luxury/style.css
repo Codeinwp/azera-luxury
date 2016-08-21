@@ -494,7 +494,8 @@ h1.single-title {
 
 .widget_search input {
   height: 35px;
-  border-radius: 0; }
+  border-radius: 0;
+  padding-left: 10px; }
 .widget_search .search-form::before {
   z-index: 10;
   color: #FFF;
@@ -519,6 +520,22 @@ h1.single-title {
     background: transparent;
     padding-left: 0;
     padding-right: 0; }
+    @media (max-width: 768px) {
+      .post-list .azera-shop-luxury-post .list-post-entry-meta span {
+        display: block;
+        min-height: 0;
+        min-width: 0;
+        width: 100%;
+        padding-left: 0;
+        padding-top: 5px;
+        padding-bottom: 5px; }
+      .post-list .azera-shop-luxury-post .list-post-entry-meta .post-comments {
+        width: 100%;
+        display: inline-block;
+        padding-left: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px; } }
   .post-list .azera-shop-luxury-post .azera-luxury-entry-title {
     font-size: 30px;
     margin-top: 0;
@@ -648,5 +665,122 @@ h1.single-title {
         .edd_download_inner .edd_price_options > ul > li span.edd_price_option_price {
           float: right;
           color: #e0b48e; }
+
+.widget_categories ul li {
+  color: #e0b48e; }
+
+.widget_calendar table, .widget_calendar td {
+  border-spacing: 4px; }
+
+.widget_calendar {
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  padding: 5px;
+  position: relative; }
+  .widget_calendar .widget-title {
+    display: none; }
+  .widget_calendar #wp-calendar {
+    font-size: 12px;
+    color: #717171;
+    margin-bottom: 0; }
+    .widget_calendar #wp-calendar > caption {
+      background-color: #e0b48e;
+      color: #FFF;
+      min-height: 50px;
+      text-align: center;
+      font-family: 'Rozha One';
+      font-size: 20px;
+      font-weight: 500;
+      padding-bottom: 11px;
+      padding-top: 11px;
+      position: relative;
+      margin-bottom: 20px; }
+    .widget_calendar #wp-calendar thead {
+      color: #e0b48e; }
+    .widget_calendar #wp-calendar th {
+      background: transparent;
+      border: none;
+      color: #717171;
+      font-family: 'Rozha One';
+      font-size: 17px;
+      font-weight: 400; }
+    .widget_calendar #wp-calendar td.pad {
+      display: none; }
+    .widget_calendar #wp-calendar td:not(.pad) {
+      background: #f1f1f1;
+      color: #717171;
+      width: 44px;
+      height: 44px; }
+    .widget_calendar #wp-calendar td a, .widget_calendar #wp-calendar th a {
+      color: #fff;
+      text-decoration: none;
+      background: #e0b48e;
+      height: 44px;
+      line-height: 44px; }
+      .widget_calendar #wp-calendar td a:hover, .widget_calendar #wp-calendar td a:focus, .widget_calendar #wp-calendar th a:hover, .widget_calendar #wp-calendar th a:focus {
+        text-decoration: none; }
+    .widget_calendar #wp-calendar #prev {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 35px;
+      height: 50px;
+      background-color: #e0b48e;
+      color: #FFF; }
+      .widget_calendar #wp-calendar #prev:before {
+        content: '\f104';
+        display: block;
+        font-size: 24px;
+        line-height: 48px;
+        text-align: center;
+        position: relative;
+        color: #FFF;
+        font-family: 'FontAwesome'; }
+      .widget_calendar #wp-calendar #prev > a {
+        top: 6px;
+        position: absolute;
+        color: transparent;
+        background: transparent; }
+    .widget_calendar #wp-calendar #next {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 35px;
+      height: 50px;
+      background-color: #e0b48e;
+      color: #FFF;
+      display: block; }
+      .widget_calendar #wp-calendar #next:before {
+        content: '\f105';
+        display: block;
+        font-size: 24px;
+        line-height: 48px;
+        text-align: center;
+        position: relative;
+        color: #FFF;
+        font-family: 'FontAwesome'; }
+      .widget_calendar #wp-calendar #next > a {
+        top: 6px;
+        position: absolute;
+        color: transparent;
+        background: transparent; }
+
+.tagcloud a {
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  color: #717171;
+  margin-right: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 15px !important;
+  font-family: 'Lato'; }
+  .tagcloud a:hover {
+    background: #e0b48e;
+    border-color: #e0b48e;
+    color: #FFF;
+    text-decoration: none; }
+
+.azera_shop_contact_form .pirate_forms input:not([type="submit"]):not([type="reset"]):not([type="button"]) {
+  padding: 5px 10px; }
 
 /*# sourceMappingURL=style.css.map */
