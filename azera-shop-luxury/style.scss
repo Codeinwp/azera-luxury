@@ -54,7 +54,12 @@ a {
   }
 }
 
-ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager) {
+ul {
+  list-style-type : none;
+  padding-left    : 0;
+}
+
+ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager):not(.client-logos) {
   li {
     &:before {
       content     : "\f105";
@@ -791,7 +796,7 @@ h1.single-title {
   text-align      : center;
   display         : inline-block;
   li {
-    display     : inline-block;
+    float       : left;
     border      : 1px solid #e1e1e1;
     border-left : none;
     height      : 41px;
@@ -813,6 +818,9 @@ h1.single-title {
     &.active {
       background-color : $heading-color;
       color            : #FFF;
+      a {
+        color : #FFF;
+      }
     }
   }
 }
@@ -889,7 +897,7 @@ h1.single-title {
       > li {
         border-top : none;
         &:before {
-          display : none;
+          display : none !important;
         }
         label {
           width : 100%;
@@ -965,7 +973,7 @@ h1.single-title {
       font-weight : 400;
     }
     td.pad {
-      display : none;
+
     }
     td:not(.pad) {
       background : #f1f1f1;

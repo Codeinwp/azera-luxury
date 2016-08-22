@@ -31,7 +31,11 @@ a {
   a:visited {
     text-decoration: none; }
 
-ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager) li:before {
+ul {
+  list-style-type: none;
+  padding-left: 0; }
+
+ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager):not(.client-logos) li:before {
   content: "\f105";
   font-family: 'FontAwesome';
   display: inline-block;
@@ -580,7 +584,7 @@ h1.single-title {
   text-align: center;
   display: inline-block; }
   .azera-luxury-pager li {
-    display: inline-block;
+    float: left;
     border: 1px solid #e1e1e1;
     border-left: none;
     height: 41px;
@@ -599,6 +603,8 @@ h1.single-title {
     .azera-luxury-pager li.active {
       background-color: #1e3046;
       color: #FFF; }
+      .azera-luxury-pager li.active a {
+        color: #FFF; }
 
 /* Contact */
 .contact-page {
@@ -650,7 +656,7 @@ h1.single-title {
     .edd_download_inner .edd_price_options > ul > li {
       border-top: none; }
       .edd_download_inner .edd_price_options > ul > li:before {
-        display: none; }
+        display: none !important; }
       .edd_download_inner .edd_price_options > ul > li label {
         width: 100%; }
       .edd_download_inner .edd_price_options > ul > li input[type="radio"], .edd_download_inner .edd_price_options > ul > li input[type="checkbox"] {
@@ -704,8 +710,6 @@ h1.single-title {
       font-family: 'Rozha One';
       font-size: 17px;
       font-weight: 400; }
-    .widget_calendar #wp-calendar td.pad {
-      display: none; }
     .widget_calendar #wp-calendar td:not(.pad) {
       background: #f1f1f1;
       color: #717171;

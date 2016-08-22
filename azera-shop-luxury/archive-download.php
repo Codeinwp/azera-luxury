@@ -42,7 +42,7 @@
 
 					<?php endwhile; ?>
 					
-					<?php the_posts_navigation(); ?>
+					<?php azera_luxury_numeric_posts_nav(); ?>
 
 				<?php else : ?>
 
