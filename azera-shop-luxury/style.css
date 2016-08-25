@@ -35,7 +35,7 @@ ul {
   list-style-type: none;
   padding-left: 0; }
 
-ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager):not(.client-logos) li:before {
+ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu) li:before {
   content: "\f105";
   font-family: 'FontAwesome';
   display: inline-block;
@@ -786,5 +786,20 @@ h1.single-title {
 
 .azera_shop_contact_form .pirate_forms input:not([type="submit"]):not([type="reset"]):not([type="button"]) {
   padding: 5px 10px; }
+
+.azera_edd_price {
+  color: #e0b48e;
+  font-size: 18px; }
+
+#sidebar-secondary .widget_categories, #sidebar-secondary .widget_archive {
+  overflow: hidden; }
+#sidebar-secondary select {
+  width: 106%;
+  height: 34px;
+  overflow: hidden;
+  background: url(assets/img/arrow.jpg) no-repeat 94% #FFF;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 5px; }
 
 /*# sourceMappingURL=style.css.map */

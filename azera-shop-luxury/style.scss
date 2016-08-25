@@ -59,7 +59,7 @@ ul {
   padding-left    : 0;
 }
 
-ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager):not(.client-logos) {
+ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu) {
   li {
     &:before {
       content     : "\f105";
@@ -1071,5 +1071,25 @@ h1.single-title {
     input:not([type="submit"]):not([type="reset"]):not([type="button"]) {
       padding : 5px 10px;
     }
+  }
+}
+
+.azera_edd_price {
+  color     : $brand-primary;
+  font-size : 18px;
+}
+
+#sidebar-secondary {
+  .widget_categories, .widget_archive {
+    overflow : hidden;
+  }
+  select {
+    width              : 106%;
+    height             : 34px;
+    overflow           : hidden;
+    background         : url(assets/img/arrow.jpg) no-repeat 94% #FFF;
+    -webkit-appearance : none;
+    border-radius      : 0;
+    padding            : 5px;
   }
 }

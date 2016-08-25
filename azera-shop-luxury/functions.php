@@ -73,20 +73,20 @@ function azera_luxury_override_defaults() {
 		                                                           array(
 			                                                           'choice'     => 'azera_shop_icon',
 			                                                           'icon_value' => 'fa-diamond',
-			                                                           'title'      => esc_html__( 'Premiul Quality', 'azera-shop-companion' ),
+			                                                           'title'      => esc_html__( 'Premium Quality', 'azera-shop-companion' ),
 			                                                           'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta diam facilisis mauris tristique commodo. Maecenas egestas quam in nulla vestibulum eleid. Duis blandit quis lectus eget.', 'azera-shop-companion' )
 		                                                           ),
 		                                                           array(
 			                                                           'choice'     => 'azera_shop_icon',
 			                                                           'icon_value' => 'fa-clock-o',
 			                                                           'title'      => esc_html__( 'Fast Delivery', 'azera-shop-companion' ),
-			                                                           'text'       => esc_html__( 'Donec nec elit ac mi molestie maximus upto id a diam. Aenean metus eros, imperdiet in purus a, dignissim euismod libero. Aenean massa metus, imperdiet eget dignissim vitae, egestas id ipsum.', 'azera-shop-companion' )
+			                                                           'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta diam facilisis mauris tristique commodo. Maecenas egestas quam in nulla vestibulum eleid. Duis blandit quis lectus eget.', 'azera-shop-companion' )
 		                                                           ),
 		                                                           array(
 			                                                           'choice'     => 'azera_shop_icon',
 			                                                           'icon_value' => 'fa-briefcase',
 			                                                           'title'      => esc_html__( 'Custom Work', 'azera-shop-companion' ),
-			                                                           'text'       => esc_html__( 'Nunc a pretium risus, vel gravida augue. Integer vulputate, mi in tempor consequat, ex ligula consectetur sapien, eu facilisis lacus massa vel ex. Atus ad lubim ret potis ist asum al ficus dominus tereum. ', 'azera-shop-companion' )
+			                                                           'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta diam facilisis mauris tristique commodo. Maecenas egestas quam in nulla vestibulum eleid. Duis blandit quis lectus eget.', 'azera-shop-companion' )
 		                                                           )
 	                                                           ) ) );
 	set_theme_mod( 'azera_shop_team_content', json_encode(
