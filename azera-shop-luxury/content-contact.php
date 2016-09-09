@@ -28,7 +28,7 @@
 				?>
 
 			<footer class="entry-footer">
-				<?php edit_post_link( esc_html__( 'Edit', 'azera-shop' ), '<span class="edit-link">', '</span>' ); ?>
+				<?php edit_post_link( esc_html__( 'Edit', 'azera-shop-luxury' ), '<span class="edit-link">', '</span>' ); ?>
 			</footer><!-- .fentry-footer -->
 
 		</div><!-- .entry-content -->

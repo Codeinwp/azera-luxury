@@ -55,7 +55,7 @@
 					?>
 				</span>
 				<a href="<?php comments_link(); ?>" class="post-comments">
-					<i class="fa fa-comment-o" aria-hidden="true"></i><?php comments_number( esc_html__('No comments','azera-shop-luxury'), esc_html__('One comment','azera-shop'), esc_html__('% comments','azera-shop-luxury') ); ?>
+					<i class="fa fa-comment-o" aria-hidden="true"></i><?php comments_number( esc_html__('No comments','azera-shop-luxury'), esc_html__('One comment','azera-shop-luxury'), esc_html__('% comments','azera-shop-luxury') ); ?>
 				</a>
 				<span itemscope itemprop="author" itemtype="http://schema.org/Person" class="entry-author post-author">
 					<span  itemprop="name" class="entry-author author vcard">
@@ -70,7 +70,7 @@
 	<div itemprop="description" class="entry-content entry-summary">
 		<?php
 			$ismore = @strpos( $post->post_content, '<!--more-->');
-			if($ismore) : the_content( sprintf( esc_html__('Read more %s &#8230;','azera-shop'), '<span class="screen-reader-text">' . esc_html__('about ', 'azera-shop') . esc_html( get_the_title() ) .'</span>' ) );
+			if($ismore) : the_content( sprintf( esc_html__('Read more %s &#8230;','azera-shop-luxury'), '<span class="screen-reader-text">' . esc_html__('about ', 'azera-shop-luxury') . esc_html( get_the_title() ) .'</span>' ) );
 			else : the_excerpt();
 			endif;
 		?>

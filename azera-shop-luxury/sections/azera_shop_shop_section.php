@@ -2,12 +2,12 @@
 
 if ( class_exists( 'WooCommerce' ) ) {
 
-	$azera_shop_shop_section_title    = get_theme_mod( 'azera_shop_shop_section_title', esc_html__( 'Shop', 'azera-shop' ) );
-	$azera_shop_shop_section_subtitle = get_theme_mod( 'azera_shop_shop_section_subtitle', esc_html__( 'Showcase your work effectively and in an attractive form that your prospective clients will love.', 'azera-shop' ) );
+	$azera_shop_shop_section_title    = get_theme_mod( 'azera_shop_shop_section_title', esc_html__( 'Shop', 'azera-shop-luxury' ) );
+	$azera_shop_shop_section_subtitle = get_theme_mod( 'azera_shop_shop_section_subtitle', esc_html__( 'Showcase your work effectively and in an attractive form that your prospective clients will love.', 'azera-shop-luxury' ) );
 	$nb_of_products                   = get_theme_mod( 'azera_shop_number_of_products', 3 );
 	$cat                              = get_theme_mod( 'azera_shop_woocomerce_categories', 'all' );
 	?>
-	<section class="shop" id="shop" role="region" aria-label="<?php esc_html_e( 'Shop', 'azera-shop' ); ?>">
+	<section class="shop" id="shop" role="region" aria-label="<?php esc_html_e( 'Shop', 'azera-shop-luxury' ); ?>">
 		<div class="section-overlay-layer">
 			<div class="container">
 

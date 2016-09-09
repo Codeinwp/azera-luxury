@@ -22,7 +22,7 @@
 
 			<a href="<?php comments_link(); ?>" class="post-comments">
 				<i class="fa fa-comment-o"
-				   aria-hidden="true"></i><?php comments_number( esc_html__( 'No comments', 'azera-shop' ), esc_html__( 'One comment', 'azera-shop' ), esc_html__( '% comments', 'azera-shop' ) ); ?>
+				   aria-hidden="true"></i><?php comments_number( esc_html__( 'No comments', 'azera-shop-luxury' ), esc_html__( 'One comment', 'azera-shop-luxury' ), esc_html__( '% comments', 'azera-shop-luxury' ) ); ?>
 			</a>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
@@ -31,7 +31,7 @@
 		<?php the_content(); ?>
 		<?php
 		wp_link_pages( array(
-			               'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'azera-shop' ),
+			               'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'azera-shop-luxury' ),
 			               'after'  => '</div>',
 		               ) );
 		?>

@@ -17,7 +17,7 @@
 
 <?php
 $azera_shop_blog_header_image = get_theme_mod( 'azera_shop_blog_header_image', azera_shop_get_file( '/assets/img/background-images/parallax-img/single-post.jpg' ));
-$azera_shop_blog_header_title = get_theme_mod( 'azera_shop_blog_header_title', esc_html__('BLOG','azera-shop')  );
+$azera_shop_blog_header_title = get_theme_mod( 'azera_shop_blog_header_title', esc_html__('BLOG','azera-shop-luxury')  );
 $azera_shop_blog_header_subtitle = get_theme_mod( 'azera_shop_blog_header_subtitle' );
 
 if( !empty($azera_shop_blog_header_image) || !empty($azera_shop_blog_header_title) || !empty($azera_shop_blog_header_subtitle) ) {

@@ -5,7 +5,7 @@
 	$azera_website_description = get_bloginfo( 'description' );
 	$azera_shop_header_title = get_theme_mod('azera_shop_header_title',$azera_website_name);
 	$azera_shop_header_subtitle = get_theme_mod('azera_shop_header_subtitle',$azera_website_description);
-	$azera_shop_header_button_text = get_theme_mod('azera_shop_header_button_text',esc_html__('GET STARTED','azera-shop'));
+	$azera_shop_header_button_text = get_theme_mod('azera_shop_header_button_text',esc_html__('GET STARTED','azera-shop-luxury'));
 	$azera_shop_header_button_link = get_theme_mod('azera_shop_header_button_link','#');
 	$azera_shop_enable_move = get_theme_mod('azera_shop_enable_move');
 	$azera_shop_first_layer = get_theme_mod('azera_shop_first_layer', azera_shop_get_file('/images/background1.png'));
@@ -77,12 +77,12 @@
 
 								if( !empty($azera_shop_header_button_text) ){
 									if( empty($azera_shop_header_button_link) ){
-										echo '<button id="inpage_scroll_btn" class="btn btn-primary standard-button inpage-scroll"><span class="screen-reader-text">'.esc_html__('Header button label:','azera-shop').$azera_shop_header_button_text.'</span>'.$azera_shop_header_button_text.'</button>';
+										echo '<button id="inpage_scroll_btn" class="btn btn-primary standard-button inpage-scroll"><span class="screen-reader-text">'.esc_html__('Header button label:','azera-shop-luxury').$azera_shop_header_button_text.'</span>'.$azera_shop_header_button_text.'</button>';
 									} else {
 										if(strpos($azera_shop_header_button_link, '#') === 0) {
-											echo '<button id="inpage_scroll_btn" class="btn btn-primary standard-button inpage-scroll" data-anchor="'.$azera_shop_header_button_link.'"><span class="screen-reader-text">'.esc_html__('Header button label:','azera-shop').$azera_shop_header_button_text.'</span>'.$azera_shop_header_button_text.'</button>';
+											echo '<button id="inpage_scroll_btn" class="btn btn-primary standard-button inpage-scroll" data-anchor="'.$azera_shop_header_button_link.'"><span class="screen-reader-text">'.esc_html__('Header button label:','azera-shop-luxury').$azera_shop_header_button_text.'</span>'.$azera_shop_header_button_text.'</button>';
 										} else {
-											echo '<button id="inpage_scroll_btn" class="btn btn-primary standard-button inpage-scroll" onClick="parent.location=\''.esc_url($azera_shop_header_button_link).'\'"><span class="screen-reader-text">'.esc_html__('Header button label:','azera-shop').$azera_shop_header_button_text.'</span>'.$azera_shop_header_button_text.'</button>';
+											echo '<button id="inpage_scroll_btn" class="btn btn-primary standard-button inpage-scroll" onClick="parent.location=\''.esc_url($azera_shop_header_button_link).'\'"><span class="screen-reader-text">'.esc_html__('Header button label:','azera-shop-luxury').$azera_shop_header_button_text.'</span>'.$azera_shop_header_button_text.'</button>';
 										}
 									}
 								} elseif ( isset( $wp_customize )   ) {

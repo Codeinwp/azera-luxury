@@ -3,22 +3,22 @@ Theme Name: Azera Shop Luxury
 Theme URI: http://themeisle.com/themes/azera-shop/
 Author: ThemeIsle
 Author URI: http://themeisle.com/
-Description: Azera Shop is an elegant free WooCommerce WordPress theme, perfect for building an one page online store. Azera Shop is ecommerce ( Woo Commerce ) Compatible, WPML, RTL,Photo Gallery Grid, Contact Form 7, Meta Slider,SiteOrigin Page Builder, SEO Friendly and with parallax effect, full screen image is one of the best e-commerce themes and a good storefront alternative. The flat and simple design based on bootstrap template can work great for any business / startup, blog or photography site.
-Version: 1.0.0
+Description: Azera Shop Luxury is an elegant free WooCommerce WordPress theme, perfect for building an one page online store. Azera Shop is ecommerce ( Woo Commerce ) Compatible, WPML, RTL,Photo Gallery Grid, Contact Form 7, Meta Slider,SiteOrigin Page Builder, SEO Friendly and with parallax effect, full screen image is one of the best e-commerce themes and a good storefront alternative. The flat and simple design based on bootstrap template can work great for any business / startup, blog or photography site.
+Version: 1.0.1
 Template: azera-shop
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: azera-shop-luxury
-Tags:black, orange, gray, white, light, responsive-layout, one-column, two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, front-page-post-form, full-width-template, rtl-language-support, threaded-comments, translation-ready
+Tags: one-column, two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, front-page-post-form, full-width-template, rtl-language-support, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Azera Shop is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc. */
+Azera Shop Luxury is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc. */
 
-$brand-primary : #e0b48e;
-$heading-color : #1e3046;
-$text-color : #717171;
+$brand-primary: #e0b48e;
+$heading-color: #1e3046;
+$text-color: #717171;
 
 @mixin css3-prefix($property, $value) {
   -webkit-#{$property}: #{$value};
@@ -34,98 +34,98 @@ $text-color : #717171;
 }
 
 body {
-  color       : $text-color;
-  font-family : 'Lato', sans-serif;
+  color: $text-color;
+  font-family: 'Lato', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family : 'Rozha One', serif;
-  color       : $heading-color;
+  font-family: 'Rozha One', serif;
+  color: $heading-color;
 }
 
 a {
-  color : $brand-primary;
+  color: $brand-primary;
   &:hover, &:focus, &:active {
-    color           : $brand-primary;
-    text-decoration : underline;
+    color: $brand-primary;
+    text-decoration: none;
   }
   &:visited {
-    text-decoration : none;
+    text-decoration: none;
   }
 }
 
 ul {
-  list-style-type : none;
-  padding-left    : 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
-ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu) {
+ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu):not(.sub-menu):not(.products) {
   li {
     &:before {
-      content     : "\f105";
-      font-family : 'FontAwesome';
-      display     : inline-block;
-      margin-left : 0;
-      width       : 15px;
-      color       : $brand-primary;
+      content: "\f105";
+      font-family: 'FontAwesome';
+      display: inline-block;
+      margin-left: 0;
+      width: 15px;
+      color: $brand-primary;
     }
   }
 }
 
 blockquote {
-  font-style   : italic;
-  border-color : $brand-primary;
+  font-style: italic;
+  border-color: $brand-primary;
 }
 
 .entry-content blockquote p {
-  color : $brand-primary;
+  color: $brand-primary;
 }
 
 /* Intro */
 .header-style-one .intro-section {
-  margin-top : 60px;
+  margin-top: 60px;
 }
 
 h1.intro {
-  font-size   : 36px;
-  line-height : initial;
-  text-align  : center;
+  font-size: 36px;
+  line-height: initial;
+  text-align: center;
 }
 
 .overlay-layer-wrap {
-  background : none;
+  background: none;
 }
 
 #intro-section {
-  text-align : center;
+  text-align: center;
   #intro_section_text_1, #intro_section_text_2 {
-    text-align : center;
+    text-align: center;
   }
 }
 
 .header-style-one .intro-section h5, .second-header-layout .intro-section h5 {
-  font-family : 'Questrial', serif;
-  color       : $text-color;
+  font-family: 'Questrial', serif;
+  color: $text-color;
 }
 
 #contactinfo {
-  display : none;
+  display: none;
 }
 
 #footer {
-  border-top     : 1px solid #e1e1e1;
-  padding-bottom : 0;
+  border-top: 1px solid #e1e1e1;
+  padding-bottom: 0;
   > .container {
-    margin-top    : 20px;
-    margin-bottom : 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .powered-by {
-    padding    : 10px 0;
-    border-top : none;
-    background : #fafafa;
+    padding: 10px 0;
+    border-top: none;
+    background: #fafafa;
   }
   .azera_shop_copyright_content {
-    font-size : 22px;
+    font-size: 22px;
   }
 }
 
@@ -133,18 +133,18 @@ h1.intro {
 .sticky-navigation {
   .main-navigation li {
     a {
-      text-transform : initial;
-      font-family    : 'Lato';
-      font-size      : 16px;
-      font-weight    : 400;
-      color          : $heading-color;
+      text-transform: initial;
+      font-family: 'Lato';
+      font-size: 16px;
+      font-weight: 400;
+      color: $heading-color;
       &:hover, &:focus, &:active {
-        color : $brand-primary;
+        color: $brand-primary;
       }
     }
     &.current_page_item {
       a {
-        color : $brand-primary;
+        color: $brand-primary;
       }
     }
   }
@@ -152,18 +152,18 @@ h1.intro {
 
 .main-navigation li {
   a {
-    text-transform : initial;
-    font-family    : 'Lato';
-    font-size      : 16px;
-    font-weight    : 400;
-    color          : $heading-color;
+    text-transform: initial;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    color: $heading-color;
     &:hover, &:focus, &:active {
-      color : $brand-primary;
+      color: $brand-primary;
     }
   }
   &.current_page_item {
     a {
-      color : $brand-primary;
+      color: $brand-primary;
     }
   }
 }
@@ -171,7 +171,7 @@ h1.intro {
 .header-search {
   &:hover {
     .header-search-button {
-      color : $brand-primary;
+      color: $brand-primary;
     }
   }
 }
@@ -179,153 +179,153 @@ h1.intro {
 .navbar-cart-inner {
   &:hover {
     .fa {
-      color : $brand-primary;
+      color: $brand-primary;
     }
   }
   .cart-item-number {
-    background : $brand-primary;
+    background: $brand-primary;
   }
 }
 
 /* Buttons */
 
 .standard-button, .navbar-register-button {
-  background-image   : none;
-  background-color   : $brand-primary;
-  box-shadow         : none;
-  -webkit-box-shadow : none;
+  background-image: none;
+  background-color: $brand-primary;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 .standard-button {
-  font-size      : 14px;
-  text-transform : initial;
-  padding        : 12px 40px 12px 40px;
+  font-size: 14px;
+  text-transform: initial;
+  padding: 12px 40px 12px 40px;
 }
 
 /* Sections */
-.dark-bg {
-  background-color : $heading-color;
+.clients.white-bg {
+  background-color: $heading-color;
 }
 
 .dark-text {
-  color : $heading-color;
+  color: $heading-color;
 }
 
 .colored-text {
-  color : $brand-primary;
+  color: $brand-primary;
 }
 
 .colored-line {
-  display : none;
+  display: none;
 }
 
 .section-header {
-  margin-top : 60px;
+  margin-top: 60px;
   h2 {
-    margin-bottom : 0;
+    margin-bottom: 0;
   }
 }
 
 .sub-heading {
-  margin-top : 10px;
+  margin-top: 10px;
 }
 
 #services {
-  border-bottom : none;
+  border-bottom: none;
 }
 
 .page-title {
-  color          : $heading-color;
-  text-transform : initial;
+  color: $heading-color;
+  text-transform: initial;
 }
 
 /* Boxes */
 
 .single-service {
-  border-bottom : 1px solid;
-  border-color  : $brand-primary;
-  border-radius : 0;
-  padding       : 40px 55px 40px 55px;
+  border-bottom: 1px solid;
+  border-color: $brand-primary;
+  border-radius: 0;
+  padding: 40px 55px 40px 55px;
   &:hover {
-    border-color : $brand-primary;
+    border-color: $brand-primary;
   }
 }
 
 .home-shop-product-wrap-all {
   a {
     h3 {
-      font-family    : 'Lato', Sans-serif;
-      text-transform : uppercase;
-      font-size      : 18px;
+      font-family: 'Lato', Sans-serif;
+      text-transform: uppercase;
+      font-size: 18px;
     }
   }
 
   .home-azera-shop-luxury-product-price {
     > span {
-      color : $brand-primary;
+      color: $brand-primary;
     }
   }
   .home-azera-shop-luxury-product-wrap {
-    display  : block;
-    position : relative;
+    display: block;
+    position: relative;
 
     .home-azera-shop-luxury-product-info {
-      position           : absolute;
-      top                : 0;
-      left               : 0;
-      bottom             : 0;
-      right              : 0;
-      opacity            : 0;
-      filter             : alpha(opacity=0);
-      -webkit-transition : all .3s ease;
-      transition         : all .3s ease;
-      background         : transparentize($heading-color, .1);
-      padding            : 0 25px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      background: transparentize($heading-color, .1);
+      padding: 0 25px;
 
       .home-azera-shop-luxury-product-content {
-        color : #FFF;
+        color: #FFF;
       }
     }
     &:hover {
       .home-azera-shop-luxury-product-info {
-        opacity            : 1;
-        filter             : alpha(opacity=1);
-        -webkit-transition : all .3s ease;
-        transition         : all .3s ease;
+        opacity: 1;
+        filter: alpha(opacity=1);
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
       }
     }
 
     .home-azera-shop-luxury-product-title {
-      margin-top : 15%;
-      display    : block;
-      color      : #FFF;
+      margin-top: 15%;
+      display: block;
+      color: #FFF;
       h4 {
-        color          : #FFF;
-        font-family    : 'Lato';
-        text-transform : uppercase;
-        position       : relative;
+        color: #FFF;
+        font-family: 'Lato';
+        text-transform: uppercase;
+        position: relative;
         &:after {
-          content          : '';
-          display          : block;
-          width            : 80%;
-          position         : relative;
-          margin           : 0 auto;
-          margin-top       : 35px;
-          margin-bottom    : 35px;
-          height           : 1px;
-          background-color : $brand-primary;
+          content: '';
+          display: block;
+          width: 80%;
+          position: relative;
+          margin: 0 auto;
+          margin-top: 35px;
+          margin-bottom: 35px;
+          height: 1px;
+          background-color: $brand-primary;
         }
       }
     }
 
     .home-azera-shop-luxury-add-to-cart-wrap {
       > a {
-        background    : $brand-primary;
-        border-radius : 3px;
-        color         : #FFF;
-        padding       : 10px 20px;
-        display       : inline-block;
-        margin-top    : 10px;
+        background: $brand-primary;
+        border-radius: 3px;
+        color: #FFF;
+        padding: 10px 20px;
+        display: inline-block;
+        margin-top: 10px;
       }
     }
   }
@@ -333,33 +333,33 @@ h1.intro {
 
 .testimonials-box {
   .feedback {
-    margin-top    : 0;
-    border-bottom : 1px solid;
-    border-color  : $brand-primary;
-    border-radius : 0;
+    margin-top: 0;
+    border-bottom: 1px solid;
+    border-color: $brand-primary;
+    border-radius: 0;
     &:hover {
-      border-color : $brand-primary;
+      border-color: $brand-primary;
     }
     .pic-container {
-      top      : 0;
-      position : relative;
-      display  : block;
+      top: 0;
+      position: relative;
+      display: block;
       .pic-container-inner {
-        box-shadow       : none;
-        background-color : transparent;
-        border           : none;
-        width            : 100px;
-        height           : 100px;
+        box-shadow: none;
+        background-color: transparent;
+        border: none;
+        width: 100px;
+        height: 100px;
       }
     }
     .feedback-text-wrap {
       .colored-text {
-        color       : $heading-color;
-        font-size   : 15px;
-        font-family : 'Rozha One';
+        color: $heading-color;
+        font-size: 15px;
+        font-family: 'Rozha One';
       }
       .small-text {
-        display : none;
+        display: none;
       }
     }
   }
@@ -367,43 +367,43 @@ h1.intro {
 
 .team-member-wrap {
   .team-member {
-    overflow : visible;
+    overflow: visible;
     &:hover {
       .member-details {
-        background-color : transparentize($brand-primary, .3);
-        opacity          : 1;
+        background-color: transparentize($brand-primary, .3);
+        opacity: 1;
       }
     }
   }
   .team-member-box {
-    padding-right : 81px;
+    padding-right: 81px;
     .member-details {
-      width         : 156px;
-      height        : 156px;
-      border-radius : 50%;
-      opacity       : 0;
+      width: 156px;
+      height: 156px;
+      border-radius: 50%;
+      opacity: 0;
     }
     .member-pic {
-      width    : 156px;
-      height   : 156px;
-      position : relative;
+      width: 156px;
+      height: 156px;
+      position: relative;
       &:before {
-        position      : absolute;
-        width         : 207px;
-        height        : 207px;
-        border        : 1px solid $brand-primary;
-        top           : -25px;
-        left          : -25px;
-        right         : 0;
-        bottom        : 0;
-        content       : '';
-        display       : block;
-        border-radius : 50%;
+        position: absolute;
+        width: 207px;
+        height: 207px;
+        border: 1px solid $brand-primary;
+        top: -25px;
+        left: -25px;
+        right: 0;
+        bottom: 0;
+        content: '';
+        display: block;
+        border-radius: 50%;
       }
       img {
-        width         : 156px;
-        height        : 156px;
-        border-radius : 50%;
+        width: 156px;
+        height: 156px;
+        border-radius: 50%;
       }
     }
   }
@@ -412,91 +412,91 @@ h1.intro {
 /* WooCommerce */
 
 .woocommerce div.product .product_title::after {
-  display : none;
+  display: none;
 }
 
 .woocommerce div.product p.price, .woocommerce div.product span.price {
-  color          : $brand-primary;
-  padding-bottom : 0;
+  color: $brand-primary;
+  padding-bottom: 0;
 }
 
 .woocommerce div.product form.cart .button, .woocommerce div.product .single_add_to_cart_button {
-  background-image   : none;
-  background-color   : $brand-primary;
-  box-shadow         : none;
-  -webkit-box-shadow : none;
-  padding            : 9px 20px 9px 20px;
+  background-image: none;
+  background-color: $brand-primary;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 9px 20px 9px 20px;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
-  padding-left  : 5px;
-  margin-bottom : 0;
+  padding-left: 5px;
+  margin-bottom: 0;
   li {
-    padding-left  : 0;
-    padding-right : 0;
-    margin-right  : 18px;
-    color         : #cfcfcf;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 18px;
+    color: #cfcfcf;
     &.active {
-      border-bottom : 1px solid $brand-primary;
-      color         : $brand-primary;
+      border-bottom: 1px solid $brand-primary;
+      color: $brand-primary;
     }
     a {
-      color       : #cfcfcf;
-      font-size   : 20px;
-      font-family : 'Lato';
-      font-weight : 400;
+      color: #cfcfcf;
+      font-size: 20px;
+      font-family: 'Lato';
+      font-weight: 400;
     }
   }
 }
 
 .woocommerce-tabs.wc-tabs-wrapper {
-  border-bottom : 1px solid $brand-primary;
-  position      : relative;
+  border-bottom: 1px solid $brand-primary;
+  position: relative;
   &:after {
     @extend .separator-mixin;
   }
 }
 
 .woocommerce div.product .woocommerce-tabs h2, .woocommerce h2 {
-  margin         : 40px 0;
-  text-transform : uppercase;
+  margin: 40px 0;
+  text-transform: uppercase;
   &:after {
-    display : none;
+    display: none;
   }
 }
 
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .woocommerce .products .product, .woocommerce-page .products .product {
-  border  : none;
-  padding : 0;
+  border: none;
+  padding: 0;
 }
 
 .woocommerce ul.products li.product, .woocommerce .products .product {
   h3 {
-    text-transform : uppercase;
-    font-family    : 'Lato';
-    font-size      : 18px;
-    font-weight    : 400;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 400;
   }
   .price {
-    color       : $brand-primary;
-    font-family : 'Lato';
-    font-size   : 18px;
-    font-weight : 400;
+    color: $brand-primary;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 400;
   }
   a {
-    border-bottom : none !important;
+    border-bottom: none !important;
   }
   .button {
-    background-image   : none;
-    background-color   : $brand-primary;
-    box-shadow         : none;
-    -webkit-box-shadow : none;
-    padding            : 9px 20px 9px 20px;
+    background-image: none;
+    background-color: $brand-primary;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    padding: 9px 20px 9px 20px;
   }
 }
 
 .woocommerce-page .upsells.products ul li.product, .woocommerce-page .upsells.products ul.products li.product, .woocommerce .upsells.products ul li.product, .woocommerce .upsells.products ul.products li.product, .woocommerce .related ul li.product, .woocommerce .related ul.products li.product .woocommerce-page .related ul li.product, .woocommerce-page .related ul.products li.product {
-  padding : 0;
+  padding: 0;
 }
 
 .woocommerce h1::after,
@@ -505,321 +505,352 @@ h1.intro {
 .woocommerce h4::after,
 .woocommerce h5::after,
 .woocommerce h6::after {
-  display : none;
+  display: none;
 }
 
 .woocommerce #review_form #respond .form-submit input {
-  background-image   : none;
-  background-color   : $brand-primary;
-  box-shadow         : none;
-  -webkit-box-shadow : none;
-  padding            : 9px 20px 9px 20px;
-  border-color       : $brand-primary;
+  background-image: none;
+  background-color: $brand-primary;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 9px 20px 9px 20px;
+  border-color: $brand-primary;
 }
 
 .woocommerce .woocommerce-breadcrumb {
-  margin-top : 10px;
+  margin-top: 10px;
 }
 
 .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current {
-  background-color : $heading-color;
-  color            : #FFF;
+  background-color: $heading-color;
+  color: #FFF;
 }
 
 .woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span {
-  min-width   : 45px !important;
-  line-height : 24px;
-  border      : 1px solid #e5e5e5;
-  color       : $heading-color;
+  min-width: 45px !important;
+  line-height: 24px;
+  border: 1px solid #e5e5e5;
+  color: $heading-color;
 }
 
 .separator-mixin {
-  position            : absolute;
-  bottom              : -20px;
-  left                : 50%;
-  -webkit-transform   : translateX(-50%);
-  -ms-transform       : translateX(-50%);
-  transform           : translateX(-50%);
-  background-color    : #FFF;
-  background-image    : url('assets/img/separator.png');
-  content             : '';
-  display             : block;
-  width               : 85px;
-  height              : 40px;
-  background-repeat   : no-repeat;
-  background-position : center;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #FFF;
+  background-image: url('assets/img/separator.png');
+  content: '';
+  display: block;
+  width: 85px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.woocommerce .cart .button, .woocommerce .cart input.button {
+  background: $brand-primary;
+  border: 1px solid $brand-primary;
+  padding: .618em 1em;
+  &:hover {
+    background: darken($brand-primary, 5%);
+    border-color: darken($brand-primary, 5%);
+  }
 }
 
 /* Single post */
 .azera-featured-image {
-  height          : 200px;
-  position        : relative;
-  display         : block;
-  margin-top      : 35px;
-  background-size : cover;
+  height: 200px;
+  position: relative;
+  display: block;
+  margin-top: 35px;
+  background-size: cover;
   h2 {
-    color      : #FFF;
-    text-align : center;
-    font-size  : 36px;
-    position   : relative;
-    z-index    : 1;
-    top        : 40%;
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+    z-index: 1;
+    top: 40%;
   }
   &:before {
-    position   : absolute;
-    top        : 0;
-    left       : 0;
-    right      : 0;
-    bottom     : 0;
-    content    : '';
-    display    : block;
-    background : transparentize(#000, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    background: transparentize(#000, .5);
   }
 }
 
 .archive-top {
-  height          : 200px;
-  position        : relative;
-  display         : block;
-  margin-top      : 35px;
-  background-size : cover;
+  height: 200px;
+  position: relative;
+  display: block;
+  margin-top: 35px;
+  background-size: cover;
   .section-overlay-layer {
-    background : transparentize(#000, .5);
-    position   : absolute;
-    top        : 0;
-    left       : 0;
-    right      : 0;
-    bottom     : 0;
-    padding    : 0;
+    background: transparentize(#000, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
     .container {
-      position : relative;
-      top      : 15%;
+      position: relative;
+      top: 25%;
     }
   }
   .archive-top-big-title {
-    color          : #FFF;
-    text-align     : center;
-    font-size      : 36px;
-    position       : relative;
-    z-index        : 1;
-    top            : 40%;
-    text-transform : initial;
-    font-family    : 'Rozha One', serif;
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+    z-index: 1;
+    top: 40%;
+    text-transform: initial;
+    font-family: 'Rozha One', serif;
+    margin-bottom: 10px;
+  }
+  .archive-top-text {
+    color: #FFF;
+    margin-top: 0;
   }
 }
 
 h1.single-title {
-  text-transform : initial;
-  color          : $heading-color;
+  text-transform: initial;
+  color: $heading-color;
 }
 
 .post-comments {
-  float : none;
+  float: none;
 }
 
 .entry-content, .entry-content p, .entry-content span {
-  font-family : 'Lato', sans-serif;
-  font-size   : 15px;
-  color       : #717171;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #717171;
 }
 
 #sidebar-secondary {
-  border-left : none;
+  border-left: none;
   .widget-title {
-    font-weight    : 400;
-    font-size      : 22px;
-    text-transform : initial;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: initial;
   }
 }
 
 .comment-list {
   .reply {
-    top   : 20px;
-    right : 20px;
+    top: 20px;
+    right: 20px;
   }
   .comment {
     > article {
-      padding      : 20px;
-      padding-left : 100px;
-      margin-left  : 0;
+      padding: 20px;
+      padding-left: 100px;
+      margin-left: 0;
     }
   }
   .comment-author {
     img {
-      left   : 20px;
-      top    : 20px;
-      border : none;
+      left: 20px;
+      top: 20px;
+      border: none;
     }
   }
   .comment-metadata {
-    font-style : normal;
-    color      : $text-color;
+    font-style: normal;
+    color: $text-color;
     a {
-      color : $text-color;
+      color: $text-color;
     }
   }
   .says {
-    display : none;
+    display: none;
   }
   ol.children {
-    margin-left  : 0;
-    padding-left : 20px;
-    border-left  : 1px solid $brand-primary;
+    margin-left: 0;
+    padding-left: 20px;
+    border-left: 1px solid $brand-primary;
   }
 }
 
 .comment-form {
   p {
-    padding-left : 0;
+    padding-left: 0;
   }
   label {
-    position : relative;
-    left     : initial;
-    display  : block;
+    position: relative;
+    left: initial;
+    display: block;
   }
 }
 
 .comment-form .form-submit input, #recaptcha-submit-btn-area input {
-  background-color : $brand-primary;
-  border-color     : $brand-primary;
+  background-color: $brand-primary;
+  border-color: $brand-primary;
 }
 
 .widget_search {
   input {
-    height        : 35px;
-    border-radius : 0;
-    padding-left  : 10px;
+    height: 35px;
+    border-radius: 0;
+    padding-left: 10px;
   }
 
+  .search-form {
+    &:hover {
+      &:before {
+        color: #FFF;
+        background: darken($brand-primary, 5%);
+      }
+    }
+  }
   .search-form::before {
-    z-index   : 10;
-    color     : #FFF;
-    font-size : 18px;
-    right     : 20px;
-    top       : 8px;
+    z-index: 10;
+    color: #FFF;
+    font-size: 18px;
+    right: 6px;
+    top: 1px;
+    background: $brand-primary;
+    padding: 8px 14px;
   }
 
   .search-submit {
-    width      : 46px;
-    height     : 35px;
-    right      : 6px;
-    background : $brand-primary;
+    width: 46px;
+    height: 35px;
+    right: 6px;
+    background: $brand-primary;
+    background: transparent;
+    z-index: 11;
   }
 }
 
 /* Blog */
 
 .post-list {
+  article.sticky {
+    border-color: $brand-primary;
+    padding: 15px;
+  }
   .azera-shop-luxury-post {
-    border        : none;
-    float         : none;
-    border-radius : 0;
-    padding       : 0 0 35px 0;
-    margin-bottom : 50px;
-    border-bottom : 1px solid $brand-primary;
+    border: none;
+    float: none;
+    border-radius: 0;
+    padding: 0 0 35px 0;
+    margin-bottom: 50px;
+    border-bottom: 1px solid $brand-primary;
     .list-post-entry-meta {
-      background    : transparent;
-      padding-left  : 0;
-      padding-right : 0;
-      @media (max-width : 768px) {
+      background: transparent;
+      padding-left: 0;
+      padding-right: 0;
+      @media (max-width: 768px) {
         span {
-          display        : block;
-          min-height     : 0;
-          min-width      : 0;
-          width          : 100%;
-          padding-left   : 0;
-          padding-top    : 5px;
-          padding-bottom : 5px;
+          display: block;
+          min-height: 0;
+          min-width: 0;
+          width: 100%;
+          padding-left: 0;
+          padding-top: 5px;
+          padding-bottom: 5px;
         }
         .post-comments {
-          width          : 100%;
-          display        : inline-block;
-          padding-left   : 0;
-          padding-top    : 5px;
-          padding-bottom : 5px;
-          padding-right  : 5px;
+          width: 100%;
+          display: inline-block;
+          padding-left: 0;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-right: 5px;
         }
       }
     }
     .azera-luxury-entry-title {
-      font-size  : 30px;
-      margin-top : 0;
-      color      : $heading-color;
+      font-size: 30px;
+      margin-top: 0;
+      color: $heading-color;
       a {
-        color : $heading-color;
+        color: $heading-color;
       }
     }
   }
 }
 
 .posted-in, .post-author {
-  font-weight  : 400;
-  margin-right : 0;
+  font-weight: 400;
+  margin-right: 0;
   i {
-    color        : $brand-primary;
-    position     : initial;
-    margin-right : 5px;
-    font-size    : 16px;
+    color: $brand-primary;
+    position: initial;
+    margin-right: 5px;
+    font-size: 16px;
   }
 }
 
 .post-date, .post-time {
-  color        : $brand-primary;
-  margin-left  : 0;
-  padding-left : 0;
+  color: $brand-primary;
+  margin-left: 0;
+  padding-left: 0;
   i {
-    font-size    : 16px;
-    position     : initial;
-    margin-right : 5px;
-    font-size    : 16px;
+    font-size: 16px;
+    position: initial;
+    margin-right: 5px;
+    font-size: 16px;
   }
 }
 
 .post-comments {
-  font-weight : 400;
+  font-weight: 400;
   i {
-    color        : $brand-primary;
-    font-size    : 16px;
-    position     : initial;
-    margin-right : 5px;
+    color: $brand-primary;
+    font-size: 16px;
+    position: initial;
+    margin-right: 5px;
   }
   a {
-    font-weight : 400;
+    font-weight: 400;
   }
 }
 
 /* Pager */
 .azera-luxury-pager {
-  list-style-type : none;
-  padding         : 0;
-  margin          : 0;
-  text-align      : center;
-  display         : inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
   li {
-    float       : left;
-    border      : 1px solid #e1e1e1;
-    border-left : none;
-    height      : 41px;
-    width       : 41px;
-    line-height : 41px;
-    color       : $heading-color;
+    float: left;
+    border: 1px solid #e1e1e1;
+    border-left: none;
+    height: 41px;
+    width: 41px;
+    line-height: 41px;
+    color: $heading-color;
     a {
-      color : $heading-color;
+      color: $heading-color;
     }
     &:first-of-type {
-      border-left               : 1px solid #e1e1e1;
-      border-top-left-radius    : 5px;
-      border-bottom-left-radius : 5px;
+      border-left: 1px solid #e1e1e1;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
     }
     &:last-of-type {
-      border-top-right-radius    : 5px;
-      border-bottom-right-radius : 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
     }
     &.active {
-      background-color : $heading-color;
-      color            : #FFF;
+      background-color: $heading-color;
+      color: #FFF;
       a {
-        color : #FFF;
+        color: #FFF;
       }
     }
   }
@@ -829,93 +860,93 @@ h1.single-title {
 
 .contact-page {
   h1.single-title {
-    font-size : 30px;
+    font-size: 30px;
   }
-  padding-bottom : 0;
+  padding-bottom: 0;
   > .container {
     &:first-of-type {
-      margin-top    : 60px;
-      margin-bottom : 50px;
+      margin-top: 60px;
+      margin-bottom: 50px;
     }
   }
   #pirate-forms-contact-submit {
-    background     : $brand-primary;
-    text-transform : initial;
-    border-color   : $brand-primary;
-    font-size      : 15px;
+    background: $brand-primary;
+    text-transform: initial;
+    border-color: $brand-primary;
+    font-size: 15px;
   }
 }
 
 /* Downloads */
 
 .edd_download_inner {
-  border : none;
-  margin : 0 0 10px;
+  border: none;
+  margin: 0 0 10px;
   .edd_download_image {
     img {
-      width : 100%;
+      width: 100%;
     }
   }
   .edd_download_title {
-    font-family    : 'Lato';
-    font-weight    : 400;
-    text-transform : uppercase;
-    margin-top     : 25px;
-    margin-bottom  : 15px;
+    font-family: 'Lato';
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 15px;
     a {
-      font-weight : 400;
-      font-size   : 18px;
-      color       : $heading-color;
+      font-weight: 400;
+      font-size: 18px;
+      color: $heading-color;
     }
   }
   p {
-    font-family : 'Lato';
-    font-size   : 15px;
-    color       : $heading-color;
+    font-family: 'Lato';
+    font-size: 15px;
+    color: $heading-color;
   }
   .edd-add-to-cart {
-    margin-top : 20px;
+    margin-top: 20px;
     &.button {
-      background : $brand-primary;
+      background: $brand-primary;
       &:hover {
-        background : lighten($brand-primary, 5%) !important;
+        background: lighten($brand-primary, 5%) !important;
       }
     }
   }
   .edd_go_to_checkout {
     &.button {
-      background : $brand-primary;
+      background: $brand-primary;
       &:hover {
-        background : lighten($brand-primary, 5%) !important;
+        background: lighten($brand-primary, 5%) !important;
       }
     }
   }
   .edd_price_options {
     > ul {
-      padding-bottom : 15px;
-      border-bottom  : 1px solid $brand-primary;
+      padding-bottom: 15px;
+      border-bottom: 1px solid $brand-primary;
       > li {
-        border-top : none;
+        border-top: none;
         &:before {
-          display : none !important;
+          display: none !important;
         }
         label {
-          width : 100%;
+          width: 100%;
         }
         input[type="radio"], input[type="checkbox"] {
-          float : left;
+          float: left;
         }
         span {
-          float    : left;
-          position : relative;
-          bottom   : 4px;
-          left     : 10px;
+          float: left;
+          position: relative;
+          bottom: 4px;
+          left: 10px;
           &.edd_price_option_sep {
-            display : none;
+            display: none;
           }
           &.edd_price_option_price {
-            float : right;
-            color : $brand-primary;
+            float: right;
+            color: $brand-primary;
           }
         }
       }
@@ -926,122 +957,122 @@ h1.single-title {
 .widget_categories {
   ul {
     li {
-      color : $brand-primary;
+      color: $brand-primary;
     }
   }
 }
 
 .widget_calendar table, .widget_calendar td {
-  border-spacing : 4px;
+  border-spacing: 4px;
 }
 
 .widget_calendar {
-  border        : 1px solid #e1e1e1;
-  border-radius : 3px;
-  padding       : 5px;
-  position      : relative;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  padding: 5px;
+  position: relative;
   .widget-title {
-    display : none;
+    display: none;
   }
   #wp-calendar {
-    font-size     : 12px;
-    color         : #717171;
-    margin-bottom : 0;
+    font-size: 12px;
+    color: #717171;
+    margin-bottom: 0;
     > caption {
-      background-color : $brand-primary;
-      color            : #FFF;
-      min-height       : 50px;
-      text-align       : center;
-      font-family      : 'Rozha One';
-      font-size        : 20px;
-      font-weight      : 500;
-      padding-bottom   : 11px;
-      padding-top      : 11px;
-      position         : relative;
-      margin-bottom    : 20px;
+      background-color: $brand-primary;
+      color: #FFF;
+      min-height: 50px;
+      text-align: center;
+      font-family: 'Rozha One';
+      font-size: 20px;
+      font-weight: 500;
+      padding-bottom: 11px;
+      padding-top: 11px;
+      position: relative;
+      margin-bottom: 20px;
     }
     thead {
-      color : $brand-primary;
+      color: $brand-primary;
     }
 
     th {
-      background  : transparent;
-      border      : none;
-      color       : $text-color;
-      font-family : 'Rozha One';
-      font-size   : 17px;
-      font-weight : 400;
+      background: transparent;
+      border: none;
+      color: $text-color;
+      font-family: 'Rozha One';
+      font-size: 17px;
+      font-weight: 400;
     }
     td.pad {
 
     }
     td:not(.pad) {
-      background : #f1f1f1;
-      color      : $text-color;
-      width      : 44px;
-      height     : 44px;
+      background: #f1f1f1;
+      color: $text-color;
+      width: 44px;
+      height: 44px;
     }
     td, th {
       a {
-        color           : #fff;
-        text-decoration : none;
-        background      : $brand-primary;
-        height          : 44px;
-        line-height     : 44px;
+        color: #fff;
+        text-decoration: none;
+        background: $brand-primary;
+        height: 44px;
+        line-height: 44px;
         &:hover, &:focus {
-          text-decoration : none;
+          text-decoration: none;
         }
       }
     }
     #prev {
-      position         : absolute;
-      top              : 5px;
-      left             : 5px;
-      width            : 35px;
-      height           : 50px;
-      background-color : $brand-primary;
-      color            : #FFF;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 35px;
+      height: 50px;
+      background-color: $brand-primary;
+      color: #FFF;
       &:before {
-        content     : '\f104';
-        display     : block;
-        font-size   : 24px;
-        line-height : 48px;
-        text-align  : center;
-        position    : relative;
-        color       : #FFF;
-        font-family : 'FontAwesome';
+        content: '\f104';
+        display: block;
+        font-size: 24px;
+        line-height: 48px;
+        text-align: center;
+        position: relative;
+        color: #FFF;
+        font-family: 'FontAwesome';
       }
       > a {
-        top        : 6px;
-        position   : absolute;
-        color      : transparent;
-        background : transparent;
+        top: 6px;
+        position: absolute;
+        color: transparent;
+        background: transparent;
       }
     }
     #next {
-      position         : absolute;
-      top              : 5px;
-      right            : 5px;
-      width            : 35px;
-      height           : 50px;
-      background-color : $brand-primary;
-      color            : #FFF;
-      display          : block;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 35px;
+      height: 50px;
+      background-color: $brand-primary;
+      color: #FFF;
+      display: block;
       &:before {
-        content     : '\f105';
-        display     : block;
-        font-size   : 24px;
-        line-height : 48px;
-        text-align  : center;
-        position    : relative;
-        color       : #FFF;
-        font-family : 'FontAwesome';
+        content: '\f105';
+        display: block;
+        font-size: 24px;
+        line-height: 48px;
+        text-align: center;
+        position: relative;
+        color: #FFF;
+        font-family: 'FontAwesome';
       }
       > a {
-        top        : 6px;
-        position   : absolute;
-        color      : transparent;
-        background : transparent;
+        top: 6px;
+        position: absolute;
+        color: transparent;
+        background: transparent;
       }
     }
   }
@@ -1049,19 +1080,19 @@ h1.single-title {
 
 .tagcloud {
   a {
-    padding       : 10px;
-    border        : 1px solid #e1e1e1;
-    color         : #717171;
-    margin-right  : 10px;
-    display       : inline-block;
-    margin-bottom : 10px;
-    font-size     : 15px !important;
-    font-family   : 'Lato';
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    color: #717171;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 15px !important;
+    font-family: 'Lato';
     &:hover {
-      background      : $brand-primary;
-      border-color    : $brand-primary;
-      color           : #FFF;
-      text-decoration : none;
+      background: $brand-primary;
+      border-color: $brand-primary;
+      color: #FFF;
+      text-decoration: none;
     }
   }
 }
@@ -1069,27 +1100,27 @@ h1.single-title {
 .azera_shop_contact_form {
   .pirate_forms {
     input:not([type="submit"]):not([type="reset"]):not([type="button"]) {
-      padding : 5px 10px;
+      padding: 5px 10px;
     }
   }
 }
 
 .azera_edd_price {
-  color     : $brand-primary;
-  font-size : 18px;
+  color: $brand-primary;
+  font-size: 18px;
 }
 
 #sidebar-secondary {
   .widget_categories, .widget_archive {
-    overflow : hidden;
+    overflow: hidden;
   }
   select {
-    width              : 106%;
-    height             : 34px;
-    overflow           : hidden;
-    background         : url(assets/img/arrow.jpg) no-repeat 94% #FFF;
-    -webkit-appearance : none;
-    border-radius      : 0;
-    padding            : 5px;
+    width: 106%;
+    height: 34px;
+    overflow: hidden;
+    background: url(assets/img/arrow.jpg) no-repeat 94% #FFF;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 5px;
   }
 }

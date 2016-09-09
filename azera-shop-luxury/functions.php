@@ -17,7 +17,7 @@ function azera_shop_luxury_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'azera-shop' ),
+			'name'          => esc_html__( 'Sidebar', 'azera-shop-luxury' ),
 			'id'            => 'sidebar-1',
 			'description'   => '',
 			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -73,38 +73,38 @@ function azera_luxury_override_defaults() {
 		                                                           array(
 			                                                           'choice'     => 'azera_shop_icon',
 			                                                           'icon_value' => 'fa-diamond',
-			                                                           'title'      => esc_html__( 'Premium Quality', 'azera-shop-companion' ),
-			                                                           'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta diam facilisis mauris tristique commodo. Maecenas egestas quam in nulla vestibulum eleid. Duis blandit quis lectus eget.', 'azera-shop-companion' )
+			                                                           'title'      => esc_html__( 'Premium Quality', 'azera-shop-luxury' ),
+			                                                           'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta diam facilisis mauris tristique commodo. Maecenas egestas quam in nulla vestibulum eleid. Duis blandit quis lectus eget.', 'azera-shop-luxury' )
 		                                                           ),
 		                                                           array(
 			                                                           'choice'     => 'azera_shop_icon',
 			                                                           'icon_value' => 'fa-clock-o',
-			                                                           'title'      => esc_html__( 'Fast Delivery', 'azera-shop-companion' ),
-			                                                           'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta diam facilisis mauris tristique commodo. Maecenas egestas quam in nulla vestibulum eleid. Duis blandit quis lectus eget.', 'azera-shop-companion' )
+			                                                           'title'      => esc_html__( 'Fast Delivery', 'azera-shop-luxury' ),
+			                                                           'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta diam facilisis mauris tristique commodo. Maecenas egestas quam in nulla vestibulum eleid. Duis blandit quis lectus eget.', 'azera-shop-luxury' )
 		                                                           ),
 		                                                           array(
 			                                                           'choice'     => 'azera_shop_icon',
 			                                                           'icon_value' => 'fa-briefcase',
-			                                                           'title'      => esc_html__( 'Custom Work', 'azera-shop-companion' ),
-			                                                           'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta diam facilisis mauris tristique commodo. Maecenas egestas quam in nulla vestibulum eleid. Duis blandit quis lectus eget.', 'azera-shop-companion' )
+			                                                           'title'      => esc_html__( 'Custom Work', 'azera-shop-luxury' ),
+			                                                           'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta diam facilisis mauris tristique commodo. Maecenas egestas quam in nulla vestibulum eleid. Duis blandit quis lectus eget.', 'azera-shop-luxury' )
 		                                                           )
 	                                                           ) ) );
 	set_theme_mod( 'azera_shop_team_content', json_encode(
 		                                        array(
 			                                        array(
 				                                        'image_url' => azera_shop_get_file( '/assets/img/team/1.jpg' ),
-				                                        'title'     => esc_html__( 'Albert Jacobs', 'azera-shop-companion' ),
-				                                        'subtitle'  => esc_html__( 'Founder & CEO', 'azera-shop-companion' )
+				                                        'title'     => esc_html__( 'Albert Jacobs', 'azera-shop-luxury' ),
+				                                        'subtitle'  => esc_html__( 'Founder & CEO', 'azera-shop-luxury' )
 			                                        ),
 			                                        array(
 				                                        'image_url' => azera_shop_get_file( '/assets/img/team/2.jpg' ),
-				                                        'title'     => esc_html__( 'Tonya Garcia', 'azera-shop-companion' ),
-				                                        'subtitle'  => esc_html__( 'Account Manager', 'azera-shop-companion' )
+				                                        'title'     => esc_html__( 'Tonya Garcia', 'azera-shop-luxury' ),
+				                                        'subtitle'  => esc_html__( 'Account Manager', 'azera-shop-luxury' )
 			                                        ),
 			                                        array(
 				                                        'image_url' => azera_shop_get_file( '/assets/img/team/3.jpg' ),
-				                                        'title'     => esc_html__( 'Linda Guthrie', 'azera-shop-companion' ),
-				                                        'subtitle'  => esc_html__( 'Business Development', 'azera-shop-companion' )
+				                                        'title'     => esc_html__( 'Linda Guthrie', 'azera-shop-luxury' ),
+				                                        'subtitle'  => esc_html__( 'Business Development', 'azera-shop-luxury' )
 			                                        )
 		                                        )
 	                                        )
@@ -114,21 +114,21 @@ function azera_luxury_override_defaults() {
 		array(
 			array(
 				'image_url' => azera_shop_get_file( '/assets/img/clients/1.jpg' ),
-				'title'     => esc_html__( 'John Smith', 'azera-shop-companion' ),
-				'subtitle'  => esc_html__( 'Lorem ipsum', 'azera-shop-companion' ),
-				'text'      => esc_html__( 'Vestibulum porta diam facilisis mauris tristique  ad utam er matus ani. commodo. Maecenas egestas quam in nulla vestibulum eleid. Duisamus blandit quis lectus eget.', 'azera-shop-companion' )
+				'title'     => esc_html__( 'John Smith', 'azera-shop-luxury' ),
+				'subtitle'  => esc_html__( 'Lorem ipsum', 'azera-shop-luxury' ),
+				'text'      => esc_html__( 'Vestibulum porta diam facilisis mauris tristique  ad utam er matus ani. commodo. Maecenas egestas quam in nulla vestibulum eleid. Duisamus blandit quis lectus eget.', 'azera-shop-luxury' )
 			),
 			array(
 				'image_url' => azera_shop_get_file( '/assets/img/clients/2.jpg' ),
-				'title'     => esc_html__( 'Ana James', 'azera-shop-companion' ),
-				'subtitle'  => esc_html__( 'Lorem ipsum', 'azera-shop-companion' ),
-				'text'      => esc_html__( 'Fusce pellentesque felis et ornare maximus. Pellentesque vel auctor jArmadales ex, ut luctus neque saat ullamcorper, sollicitudin lacus in, varius risus. ', 'azera-shop-companion' )
+				'title'     => esc_html__( 'Ana James', 'azera-shop-luxury' ),
+				'subtitle'  => esc_html__( 'Lorem ipsum', 'azera-shop-luxury' ),
+				'text'      => esc_html__( 'Fusce pellentesque felis et ornare maximus. Pellentesque vel auctor jArmadales ex, ut luctus neque saat ullamcorper, sollicitudin lacus in, varius risus. ', 'azera-shop-luxury' )
 			),
 			array(
 				'image_url' => azera_shop_get_file( '/assets/img/clients/3.jpg' ),
-				'title'     => esc_html__( 'Diane Elle', 'azera-shop-companion' ),
-				'subtitle'  => esc_html__( 'Lorem ipsum', 'azera-shop-companion' ),
-				'text'      => esc_html__( 'Morbi erat mi, mattis sit amet nisl non, sollicitudin rh ut estim oncus sapien. Integer scelerisque ipsum sem, nec sodales arcu mattis vitae. Morbi quis euismod massa. ', 'azera-shop-companion' )
+				'title'     => esc_html__( 'Diane Elle', 'azera-shop-luxury' ),
+				'subtitle'  => esc_html__( 'Lorem ipsum', 'azera-shop-luxury' ),
+				'text'      => esc_html__( 'Morbi erat mi, mattis sit amet nisl non, sollicitudin rh ut estim oncus sapien. Integer scelerisque ipsum sem, nec sodales arcu mattis vitae. Morbi quis euismod massa. ', 'azera-shop-luxury' )
 			)
 		)
 	) );
