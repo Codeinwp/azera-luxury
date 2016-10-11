@@ -1,20 +1,23 @@
 <?php
 /**
- * @package azera-shop-luxury
+ * The template part for displaying results in search pages.
+ *
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package azera-shop
  */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('azera-shop-luxury-post'); ?> itemtype="http://schema.org/BlogPosting" itemtype="http://schema.org/BlogPosting">
-
 	<header class="entry-header">
 
 			<div class="post-img-wrap">
 			 	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 
-					<?php 
+					<?php
 						if ( has_post_thumbnail() ) {
 					?>
-						<?php 
+						<?php
 							$image_id = get_post_thumbnail_id();
 							$image_url_big = wp_get_attachment_image_src($image_id,'azera-shop-post-thumbnail-big', true);
 							$image_url_mobile = wp_get_attachment_image_src($image_id,'azera-shop-post-thumbnail-mobile', true);
@@ -27,31 +30,30 @@
 						} else {
 					?>
 				 		<picture itemscope itemprop="image">
-							<source media="(max-width: 600px)" srcset="<?php echo azera_shop_get_file('/images/no-thumbnail-mobile.jpg');?> ">
+							<source media="(max-width: 600px)" srcset=" <?php echo azera_shop_get_file('/images/no-thumbnail-mobile.jpg'); ?> ">
 							<img src="<?php echo azera_shop_get_file('/images/no-thumbnail.jpg'); ?>" alt="<?php the_title_attribute(); ?>">
 						</picture>
 					<?php } ?>
 
 				</a>
 			</div>
-			
+
 			<div class="entry-meta list-post-entry-meta">
 				<span class="post-date" itemprop="datePublished" datetime="<?php the_time( 'Y-m-d\TH:i:sP' ); ?>" title="<?php the_time( _x( 'l, F j, Y, g:i a', 'post time format', 'azera-shop-luxury' ) ); ?>">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
-					<?php the_time( get_option('date_format') ); ?>
+					<?php the_time( get_option( 'date_format' ) ); ?>
 				</span>
-
 				<span class="posted-in entry-terms-categories">
 					<i class="fa fa-folder-open-o" aria-hidden="true"></i>
 					<?php
-						/* translators: used between list items, there is a space after the comma */
-						$categories_list = get_the_category_list( esc_html__( ', ', 'azera-shop-luxury' ) );
-						$pos = strpos($categories_list, ',');
-						if ( $pos ) {
-							echo substr($categories_list, 0, $pos);
-						} else {
-							echo $categories_list;
-						}
+					/* translators: used between list items, there is a space after the comma */
+					$categories_list = get_the_category_list( esc_html__( ', ', 'azera-shop-luxury' ) );
+					$pos = strpos($categories_list, ',');
+					if ( $pos ) {
+						echo substr($categories_list, 0, $pos);
+					} else {
+						echo $categories_list;
+					}
 					?>
 				</span>
 				<a href="<?php comments_link(); ?>" class="post-comments">
@@ -70,17 +72,10 @@
 	<div itemprop="description" class="entry-content entry-summary">
 		<?php
 			$ismore = @strpos( $post->post_content, '<!--more-->');
-			if($ismore) : the_content( sprintf( esc_html__('Read more %s &#8230;','azera-shop-luxury'), '<span class="screen-reader-text">' . esc_html__('about ', 'azera-shop-luxury') . esc_html( get_the_title() ) .'</span>' ) );
+			if($ismore) : the_content();
 			else : the_excerpt();
 			endif;
 		?>
-
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'azera-shop-luxury' ),
-				'after'  => '</div>',
-			) );
-		?>
 	</div><!-- .entry-content -->
-
 </article><!-- #post-## -->
+

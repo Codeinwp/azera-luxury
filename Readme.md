@@ -1,8 +1,8 @@
-# Azera Luxury
+# Azera Shop Luxury
 
 Contributors: codeinwp, themeisle
 
-Tags: black, orange, gray, white, light, responsive-layout, one-column, two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, front-page-post-form, full-width-template, rtl-language-support, threaded-comments, translation-ready
+Tags: one-column, two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, front-page-post-form, full-width-template, rtl-language-support, threaded-comments, translation-ready
 
 Requires at least:	3.3.0
 
