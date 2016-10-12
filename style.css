@@ -35,7 +35,7 @@ ul {
   list-style-type: none;
   padding-left: 0; }
 
-ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu):not(.sub-menu):not(.products) li:before {
+.content-area ul:not(.nav):not(.page-numbers):not(.tabs):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu):not(.sub-menu):not(.products) li:before {
   content: "\f105";
   font-family: 'FontAwesome';
   display: inline-block;
@@ -280,6 +280,36 @@ h1.intro {
       border-radius: 50%; }
 
 /* WooCommerce */
+.woocommerce-ordering {
+  width: 255px;
+  overflow: hidden; }
+  .woocommerce-ordering select {
+    font-family: Lato;
+    font-size: 15px;
+    color: #717171;
+    width: 107% !important;
+    height: 34px;
+    overflow: hidden;
+    background: url(assets/img/arrow.jpg) no-repeat 94% #FFF;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 5px !important; }
+
+.single-product.woocommerce .woocommerce-Price-amount.amount {
+  font-weight: 700;
+  font-size: 22px; }
+
+.woocommerce .woocommerce-Price-currencySymbol {
+  font-size: 12px;
+  font-weight: 400;
+  vertical-align: super; }
+
+.woocommerce div.product .product_title {
+  font-family: Lato;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #1e3046; }
+
 .woocommerce div.product .product_title::after {
   display: none; }
 
@@ -292,7 +322,8 @@ h1.intro {
   background-color: #e0b48e;
   box-shadow: none;
   -webkit-box-shadow: none;
-  padding: 9px 20px 9px 20px; }
+  padding: 9px 20px 9px 20px;
+  text-transform: initial; }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
   padding-left: 5px;
@@ -323,7 +354,8 @@ h1.intro {
 
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .woocommerce .products .product, .woocommerce-page .products .product {
   border: none;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 60px; }
 
 .woocommerce ul.products li.product h3, .woocommerce .products .product h3 {
   text-transform: uppercase;
@@ -342,7 +374,10 @@ h1.intro {
   background-color: #e0b48e;
   box-shadow: none;
   -webkit-box-shadow: none;
-  padding: 9px 20px 9px 20px; }
+  padding: 9px 20px 9px 20px;
+  text-transform: initial;
+  font-size: 15px;
+  color: #fff; }
 
 .woocommerce-page .upsells.products ul li.product, .woocommerce-page .upsells.products ul.products li.product, .woocommerce .upsells.products ul li.product, .woocommerce .upsells.products ul.products li.product, .woocommerce .related ul li.product, .woocommerce .related ul.products li.product .woocommerce-page .related ul li.product, .woocommerce-page .related ul.products li.product {
   padding: 0; }

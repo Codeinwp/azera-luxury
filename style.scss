@@ -59,15 +59,17 @@ ul {
   padding-left: 0;
 }
 
-ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu):not(.sub-menu):not(.products) {
-  li {
-    &:before {
-      content: "\f105";
-      font-family: 'FontAwesome';
-      display: inline-block;
-      margin-left: 0;
-      width: 15px;
-      color: $brand-primary;
+.content-area {
+  ul:not(.nav):not(.page-numbers):not(.tabs):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu):not(.sub-menu):not(.products) {
+    li {
+      &:before {
+        content: "\f105";
+        font-family: 'FontAwesome';
+        display: inline-block;
+        margin-left: 0;
+        width: 15px;
+        color: $brand-primary;
+      }
     }
   }
 }
@@ -411,6 +413,41 @@ h1.intro {
 
 /* WooCommerce */
 
+.woocommerce-ordering {
+  width: 255px;
+  overflow: hidden;
+  select {
+    font-family: Lato;
+    font-size: 15px;
+    color: #717171;
+    width: 107% !important;
+    height: 34px;
+    overflow: hidden;
+    background: url(assets/img/arrow.jpg) no-repeat 94% #FFF;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 5px !important;
+  }
+}
+
+.single-product.woocommerce .woocommerce-Price-amount.amount {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.woocommerce .woocommerce-Price-currencySymbol {
+  font-size: 12px;
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.woocommerce div.product .product_title {
+  font-family: Lato;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #1e3046;
+}
+
 .woocommerce div.product .product_title::after {
   display: none;
 }
@@ -426,6 +463,7 @@ h1.intro {
   box-shadow: none;
   -webkit-box-shadow: none;
   padding: 9px 20px 9px 20px;
+  text-transform: initial;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
@@ -468,6 +506,7 @@ h1.intro {
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .woocommerce .products .product, .woocommerce-page .products .product {
   border: none;
   padding: 0;
+  margin-bottom: 60px;
 }
 
 .woocommerce ul.products li.product, .woocommerce .products .product {
@@ -492,6 +531,9 @@ h1.intro {
     box-shadow: none;
     -webkit-box-shadow: none;
     padding: 9px 20px 9px 20px;
+    text-transform: initial;
+    font-size: 15px;
+    color: #fff;
   }
 }
 
