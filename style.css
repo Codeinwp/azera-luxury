@@ -166,6 +166,19 @@ h1.intro {
   padding: 40px 55px 40px 55px; }
   .single-service:hover {
     border-color: #e0b48e; }
+  .single-service .service-icon {
+    position: relative;
+    margin-bottom: 20px; }
+    .single-service .service-icon:after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: #e0b48e;
+      margin: 0 auto;
+      margin-top: 25px; }
+  .single-service h3 {
+    margin-top: 0; }
 
 .home-shop-product-wrap-all a h3 {
   font-family: 'Lato', Sans-serif;
@@ -479,16 +492,19 @@ h1.intro {
     color: #FFF;
     text-align: center;
     font-size: 36px;
-    position: relative;
+    position: absolute;
     z-index: 1;
-    top: 40%;
+    top: 23%;
     text-transform: initial;
     font-family: 'Rozha One', serif;
     margin-bottom: 10px;
-    margin-top: 25px; }
+    margin-top: 25px;
+    width: 100%; }
   .archive-top .archive-top-text {
     color: #FFF;
-    margin-top: 0; }
+    position: absolute;
+    width: 100%;
+    top: 45%; }
 
 h1.single-title {
   text-transform: initial;
@@ -858,5 +874,41 @@ h1.single-title {
   -webkit-appearance: none;
   border-radius: 0;
   padding: 5px; }
+
+.search-form label {
+  margin-bottom: 0; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+  background-image: none;
+  background-color: #e0b48e;
+  border-color: #e0b48e;
+  line-height: initial;
+  padding: 15px 30px; }
+  button:hover, button:active, button:focus, input[type="button"]:hover, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus, .woocommerce #respond input#submit:hover, .woocommerce #respond input#submit:active, .woocommerce #respond input#submit:focus, .woocommerce a.button:hover, .woocommerce a.button:active, .woocommerce a.button:focus, .woocommerce button.button:hover, .woocommerce button.button:active, .woocommerce button.button:focus, .woocommerce input.button:hover, .woocommerce input.button:active, .woocommerce input.button:focus, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:active, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:focus {
+    background-color: #dba77a;
+    color: #FFF;
+    border-color: #dba77a; }
+
+.woocommerce a.button.alt {
+  border-bottom: 1px solid #e0b48e;
+  color: #FFF; }
+
+.woocommerce .woocommerce-message {
+  background-color: #e0b48e;
+  border-bottom: 3px solid #e0b48e; }
+
+.woocommerce td.product-name dl.variation dd, .woocommerce td.product-name dl.variation dt {
+  margin: 0; }
+
+.woocommerce dl.variation dt {
+  margin-right: 5px !important; }
+.woocommerce dl.variation dd p {
+  line-height: 20px; }
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px; }
 
 /*# sourceMappingURL=style.css.map */

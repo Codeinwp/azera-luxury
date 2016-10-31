@@ -33,7 +33,6 @@ if( !empty($azera_shop_blog_header_image) || !empty($azera_shop_blog_header_titl
 		echo '<div class="archive-top" role="banner">';
 	}
 		echo '<div class="section-overlay-layer">';
-			echo '<div class="container">';
 				if( !empty($azera_shop_blog_header_title) ) {
 					echo '<p class="archive-top-big-title">'.$azera_shop_blog_header_title.'</p>';
 				}
@@ -41,7 +40,6 @@ if( !empty($azera_shop_blog_header_image) || !empty($azera_shop_blog_header_titl
 				if( !empty($azera_shop_blog_header_subtitle) ) {
 					echo '<p class="archive-top-text">'.$azera_shop_blog_header_subtitle.'</p>';
 				}
-			echo '</div>';
 		echo '</div>';
 	echo '</div>';
 
