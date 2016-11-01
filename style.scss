@@ -3,8 +3,8 @@ Theme Name: Azera Shop Luxury
 Theme URI: http://themeisle.com/themes/azera-shop/
 Author: ThemeIsle
 Author URI: http://themeisle.com/
-Description: Azera Shop Luxury is an elegant free WooCommerce WordPress theme, perfect for building an one page online store. Azera Shop is ecommerce ( Woo Commerce ) Compatible, WPML, RTL,Photo Gallery Grid, Contact Form 7, Meta Slider,SiteOrigin Page Builder, SEO Friendly and with parallax effect, full screen image is one of the best e-commerce themes and a good storefront alternative. The flat and simple design based on bootstrap template can work great for any business / startup, blog or photography site.
-Version: 1.0.1
+Description: Azera Shop Luxuryis an elegant free WooCommerce WordPress theme, perfect for building an one page online store. Azera Shop is ecommerce ( Woo Commerce ) Compatible, WPML, RTL,Photo Gallery Grid, Contact Form 7, Meta Slider,SiteOrigin Page Builder, SEO Friendly and with parallax effect, full screen image is one of the best e-commerce themes and a good storefront alternative. The flat and simple design based on bootstrap template can work great for any business / startup, blog or photography site.
+Version: 1.0.0
 Template: azera-shop
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -59,15 +59,17 @@ ul {
   padding-left: 0;
 }
 
-ul:not(.nav):not(.page-numbers):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu):not(.sub-menu):not(.products) {
-  li {
-    &:before {
-      content: "\f105";
-      font-family: 'FontAwesome';
-      display: inline-block;
-      margin-left: 0;
-      width: 15px;
-      color: $brand-primary;
+.content-area {
+  ul:not(.nav):not(.page-numbers):not(.tabs):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu):not(.sub-menu):not(.products) {
+    li {
+      &:before {
+        content: "\f105";
+        font-family: 'FontAwesome';
+        display: inline-block;
+        margin-left: 0;
+        width: 15px;
+        color: $brand-primary;
+      }
     }
   }
 }
@@ -249,6 +251,24 @@ h1.intro {
   &:hover {
     border-color: $brand-primary;
   }
+
+  .service-icon {
+    position: relative;
+    margin-bottom:20px;
+    &:after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: $brand-primary;
+      margin: 0 auto;
+      margin-top: 25px;
+    }
+  }
+
+  h3 {
+    margin-top: 0;
+  }
 }
 
 .home-shop-product-wrap-all {
@@ -411,6 +431,41 @@ h1.intro {
 
 /* WooCommerce */
 
+.woocommerce-ordering {
+  width: 255px;
+  overflow: hidden;
+  select {
+    font-family: Lato;
+    font-size: 15px;
+    color: #717171;
+    width: 107% !important;
+    height: 34px;
+    overflow: hidden;
+    background: url(assets/img/arrow.jpg) no-repeat 94% #FFF;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 5px !important;
+  }
+}
+
+.single-product.woocommerce .woocommerce-Price-amount.amount {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.woocommerce .woocommerce-Price-currencySymbol {
+  font-size: 12px;
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.woocommerce div.product .product_title {
+  font-family: Lato;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #1e3046;
+}
+
 .woocommerce div.product .product_title::after {
   display: none;
 }
@@ -426,6 +481,7 @@ h1.intro {
   box-shadow: none;
   -webkit-box-shadow: none;
   padding: 9px 20px 9px 20px;
+  text-transform: initial;
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
@@ -468,6 +524,7 @@ h1.intro {
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .woocommerce .products .product, .woocommerce-page .products .product {
   border: none;
   padding: 0;
+  margin-bottom: 60px;
 }
 
 .woocommerce ul.products li.product, .woocommerce .products .product {
@@ -492,6 +549,9 @@ h1.intro {
     box-shadow: none;
     -webkit-box-shadow: none;
     padding: 9px 20px 9px 20px;
+    text-transform: initial;
+    font-size: 15px;
+    color: #fff;
   }
 }
 
@@ -553,7 +613,6 @@ h1.intro {
 .woocommerce .cart .button, .woocommerce .cart input.button {
   background: $brand-primary;
   border: 1px solid $brand-primary;
-  padding: .618em 1em;
   &:hover {
     background: darken($brand-primary, 5%);
     border-color: darken($brand-primary, 5%);
@@ -610,16 +669,20 @@ h1.intro {
     color: #FFF;
     text-align: center;
     font-size: 36px;
-    position: relative;
+    position: absolute;
     z-index: 1;
-    top: 40%;
+    top: 23%;
     text-transform: initial;
     font-family: 'Rozha One', serif;
     margin-bottom: 10px;
+    margin-top: 25px;
+    width: 100%;
   }
   .archive-top-text {
     color: #FFF;
-    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    top: 45%;
   }
 }
 
@@ -1123,4 +1186,55 @@ h1.single-title {
     border-radius: 0;
     padding: 5px;
   }
+}
+
+.search-form {
+  label {
+    margin-bottom: 0;
+  }
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+  background-image: none;
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+  line-height: initial;
+  padding: 15px 30px;
+  &:hover, &:active, &:focus {
+    background-color: darken($brand-primary, 5%);
+    color: #FFF;
+    border-color: darken($brand-primary, 5%);
+  }
+}
+
+.woocommerce a.button.alt {
+  border-bottom: 1px solid $brand-primary;
+  color: #FFF;
+}
+
+.woocommerce .woocommerce-message {
+  background-color: $brand-primary;
+  border-bottom: 3px solid $brand-primary;
+}
+
+.woocommerce td.product-name dl.variation dd, .woocommerce td.product-name dl.variation dt {
+  margin: 0;
+}
+
+.woocommerce dl.variation {
+  dt {
+    margin-right: 5px !important;
+  }
+  dd {
+    p {
+      line-height: 20px;
+    }
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
