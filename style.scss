@@ -254,7 +254,7 @@ h1.intro {
 
   .service-icon {
     position: relative;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     &:after {
       content: '';
       display: block;
@@ -434,6 +434,9 @@ h1.intro {
 .woocommerce-ordering {
   width: 255px;
   overflow: hidden;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   select {
     font-family: Lato;
     font-size: 15px;
@@ -445,6 +448,7 @@ h1.intro {
     -webkit-appearance: none;
     border-radius: 0;
     padding: 5px !important;
+    line-height: 24px;
   }
 }
 
@@ -579,6 +583,10 @@ h1.intro {
 
 .woocommerce .woocommerce-breadcrumb {
   margin-top: 10px;
+}
+
+.woocommerce nav.woocommerce-pagination {
+  margin-bottom: 30px;
 }
 
 .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current {
