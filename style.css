@@ -3,7 +3,7 @@ Theme Name: Azera Shop Luxury
 Theme URI: http://themeisle.com/themes/azera-shop/
 Author: ThemeIsle
 Author URI: http://themeisle.com/
-Description: Azera Shop Luxury is an elegant free WooCommerce WordPress theme, perfect for building an one page online store. Azera Shop is ecommerce ( Woo Commerce ) Compatible, WPML, RTL,Photo Gallery Grid, Contact Form 7, Meta Slider,SiteOrigin Page Builder, SEO Friendly and with parallax effect, full screen image is one of the best e-commerce themes and a good storefront alternative. The flat and simple design based on bootstrap template can work great for any business / startup, blog or photography site.
+Description: Azera Shop Luxuryis an elegant free WooCommerce WordPress theme, perfect for building an one page online store. Azera Shop is ecommerce ( Woo Commerce ) Compatible, WPML, RTL,Photo Gallery Grid, Contact Form 7, Meta Slider,SiteOrigin Page Builder, SEO Friendly and with parallax effect, full screen image is one of the best e-commerce themes and a good storefront alternative. The flat and simple design based on bootstrap template can work great for any business / startup, blog or photography site.
 Version: 1.0.2
 Template: azera-shop
 License: GNU General Public License v2 or later
@@ -296,6 +296,9 @@ h1.intro {
 .woocommerce-ordering {
   width: 255px;
   overflow: hidden; }
+  @media (max-width: 768px) {
+    .woocommerce-ordering {
+      width: 100%; } }
   .woocommerce-ordering select {
     font-family: Lato;
     font-size: 15px;
@@ -306,7 +309,8 @@ h1.intro {
     background: url(assets/img/arrow.jpg) no-repeat 94% #FFF;
     -webkit-appearance: none;
     border-radius: 0;
-    padding: 5px !important; }
+    padding: 5px !important;
+    line-height: 24px; }
 
 .single-product.woocommerce .woocommerce-Price-amount.amount {
   font-weight: 700;
@@ -413,6 +417,9 @@ h1.intro {
 
 .woocommerce .woocommerce-breadcrumb {
   margin-top: 10px; }
+
+.woocommerce nav.woocommerce-pagination {
+  margin-bottom: 30px; }
 
 .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current {
   background-color: #1e3046;
