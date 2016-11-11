@@ -196,6 +196,11 @@ h1.intro {
   background-color: $brand-primary;
   box-shadow: none;
   -webkit-box-shadow: none;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($brand-primary, 5%);
+  }
 }
 
 .standard-button {
@@ -283,6 +288,12 @@ h1.intro {
   .home-azera-shop-luxury-product-price {
     > span {
       color: $brand-primary;
+      font-size: 18px;
+      .woocommerce-Price-currencySymbol {
+        font-size: 12px;
+        font-weight: 400;
+        vertical-align: super;
+      }
     }
   }
   .home-azera-shop-luxury-product-wrap {
@@ -438,7 +449,7 @@ h1.intro {
     width: 100%;
   }
   select {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 15px;
     color: #717171;
     width: 107% !important;
@@ -449,6 +460,7 @@ h1.intro {
     border-radius: 0;
     padding: 5px !important;
     line-height: 24px;
+    cursor: pointer;
   }
 }
 
@@ -479,6 +491,10 @@ h1.intro {
   padding-bottom: 0;
 }
 
+.woocommerce div.product p.stock {
+  color: $brand-primary;
+}
+
 .woocommerce div.product form.cart .button, .woocommerce div.product .single_add_to_cart_button {
   background-image: none;
   background-color: $brand-primary;
@@ -486,6 +502,11 @@ h1.intro {
   -webkit-box-shadow: none;
   padding: 9px 20px 9px 20px;
   text-transform: initial;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($brand-primary, 5%);
+  }
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
@@ -509,6 +530,11 @@ h1.intro {
   }
 }
 
+.woocommerce .star-rating span {
+  font-family: 'star';
+  top: -1px;
+}
+
 .woocommerce-tabs.wc-tabs-wrapper {
   border-bottom: 1px solid $brand-primary;
   position: relative;
@@ -529,6 +555,12 @@ h1.intro {
   border: none;
   padding: 0;
   margin-bottom: 60px;
+}
+
+.related.products {
+  .woocommerce-Price-amount.amount {
+    font-weight: 400;
+  }
 }
 
 .woocommerce ul.products li.product, .woocommerce .products .product {
@@ -583,6 +615,13 @@ h1.intro {
 
 .woocommerce .woocommerce-breadcrumb {
   margin-top: 10px;
+  a {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $brand-primary;
+    }
+  }
 }
 
 .woocommerce nav.woocommerce-pagination {
@@ -658,7 +697,7 @@ h1.intro {
   height: 200px;
   position: relative;
   display: block;
-  margin-top: 35px;
+  margin-top: 9px;
   background-size: cover;
   .section-overlay-layer {
     background: transparentize(#000, .5);
@@ -1202,7 +1241,7 @@ h1.single-title {
   }
 }
 
-button, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+button, input[type="button"], input[type="reset"], input[type="submit"], .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce #payment #place_order {
   background-image: none;
   background-color: $brand-primary;
   border-color: $brand-primary;
@@ -1212,6 +1251,15 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .woocom
     background-color: darken($brand-primary, 5%);
     color: #FFF;
     border-color: darken($brand-primary, 5%);
+  }
+}
+
+.woocommerce-product-search {
+  input[type="submit"] {
+    &:hover {
+      background: transparent;
+      color: $brand-primary;
+    }
   }
 }
 
@@ -1246,3 +1294,4 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
