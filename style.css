@@ -688,7 +688,9 @@ h1.single-title {
   .post-list .azera-shop-luxury-post .azera-luxury-entry-title {
     font-size: 30px;
     margin-top: 0;
-    color: #1e3046; }
+    color: #1e3046;
+    display: inline-block;
+    width: 100%; }
     .post-list .azera-shop-luxury-post .azera-luxury-entry-title a {
       color: #1e3046; }
 
