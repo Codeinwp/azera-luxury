@@ -4,7 +4,7 @@ Theme URI: http://themeisle.com/themes/azera-shop/
 Author: ThemeIsle
 Author URI: http://themeisle.com/
 Description: Azera Shop Luxury is an elegant free WooCommerce WordPress theme, perfect for building an one page online store. Azera Shop is ecommerce ( Woo Commerce ) Compatible, WPML, RTL,Photo Gallery Grid, Contact Form 7, Meta Slider,SiteOrigin Page Builder, SEO Friendly and with parallax effect, full screen image is one of the best e-commerce themes and a good storefront alternative. The flat and simple design based on bootstrap template can work great for any business / startup, blog or photography site.
-Version: 1.0.3
+Version: 1.0.4
 Template: azera-shop
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -118,6 +118,12 @@ h1.intro {
 .navbar-cart-inner .cart-item-number {
   background: #e0b48e; }
 
+.navbar-inverse .navbar-toggle .icon-bar {
+  background: #e0b48e; }
+
+.navbar-inverse button#menu-toggle:hover, .navbar-inverse button#menu-toggle:focus {
+  background: #e0b48e; }
+
 /* Buttons */
 .standard-button, .navbar-register-button {
   background-image: none;
@@ -131,6 +137,9 @@ h1.intro {
   font-size: 14px;
   text-transform: initial;
   padding: 12px 40px 12px 40px; }
+
+.dropdown-toggle:hover, .dropdown-toggle:focus {
+  background: #e0b48e; }
 
 /* Sections */
 .clients.white-bg {
@@ -324,13 +333,47 @@ h1.intro {
   font-weight: 700;
   font-size: 22px; }
 
+.woocommerce .quantity {
+  position: relative; }
+  .woocommerce .quantity > .qty {
+    border-radius: 0;
+    font-weight: 400;
+    padding-right: 15px;
+    width: 105px; }
+  .woocommerce .quantity .arrow-up, .woocommerce .quantity .arrow-down {
+    position: absolute;
+    bottom: 22px;
+    right: 0;
+    height: 22px;
+    width: 32px;
+    border-right: 1px solid #ddd;
+    background: #FFF;
+    color: #808080;
+    border-top: 1px solid #E7E7E7;
+    border-left: 1px solid #E7E7E7;
+    text-align: center; }
+    .woocommerce .quantity .arrow-up .dashicons, .woocommerce .quantity .arrow-down .dashicons {
+      font-size: 12px;
+      line-height: 22px; }
+  .woocommerce .quantity .arrow-down {
+    bottom: 0;
+    border-bottom: 1px solid #E7E7E7; }
+
 .woocommerce .woocommerce-Price-currencySymbol {
   font-size: 12px;
   font-weight: 400;
   vertical-align: super; }
 
+.woocommerce div.product .product_meta > span {
+  font-weight: bold;
+  color: #717171;
+  font-size: 15px;
+  display: block; }
+  .woocommerce div.product .product_meta > span a, .woocommerce div.product .product_meta > span span {
+    font-weight: 400; }
+
 .woocommerce div.product .product_title {
-  font-family: Lato;
+  font-family: 'Lato';
   font-size: 24px;
   text-transform: uppercase;
   color: #1e3046; }
@@ -353,7 +396,7 @@ h1.intro {
   padding: 9px 20px 9px 20px;
   text-transform: initial; }
   .woocommerce div.product form.cart .button:hover, .woocommerce div.product form.cart .button:focus, .woocommerce div.product form.cart .button:active, .woocommerce div.product .single_add_to_cart_button:hover, .woocommerce div.product .single_add_to_cart_button:focus, .woocommerce div.product .single_add_to_cart_button:active {
-    background-color: #e5c1a2; }
+    background-color: #e5c1a2 !important; }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs {
   padding-left: 5px;
@@ -649,6 +692,23 @@ h1.single-title {
     .post-list .azera-shop-luxury-post .azera-luxury-entry-title a {
       color: #1e3046; }
 
+@media (max-width: 768px) {
+  .entry-meta.single-entry-meta span {
+    display: block;
+    min-height: 0;
+    min-width: 0;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .entry-meta.single-entry-meta .post-comments {
+    width: 100%;
+    display: inline-block;
+    padding-left: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px; } }
+
 .posted-in, .post-author {
   font-weight: 400;
   margin-right: 0; }
@@ -938,10 +998,17 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .woocom
 .woocommerce dl.variation dd p {
   line-height: 20px; }
 
+.woocommerce div.product form.cart .variations tr label {
+  font-weight: bold;
+  font-family: 'Lato';
+  color: #717171;
+  font-size: 15px; }
+
 body {
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px; }
+  margin: 0;
+  padding: 0;
+  line-height: 23px; }
 
 /*# sourceMappingURL=style.css.map */
