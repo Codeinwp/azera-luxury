@@ -543,6 +543,9 @@ h1.intro {
     display: block;
     background: rgba(0, 0, 0, 0.5); }
 
+.sticky-navigation-open {
+  min-height: 45px; }
+
 .archive-top {
   height: 200px;
   position: relative;

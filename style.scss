@@ -751,7 +751,9 @@ h1.intro {
     background: transparentize(#000, .5);
   }
 }
-
+.sticky-navigation-open{
+  min-height:45px;
+}
 .archive-top {
   height: 200px;
   position: relative;
