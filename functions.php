@@ -59,7 +59,7 @@ add_action( 'wp_enqueue_scripts', 'azera_shop_luxury_enqueue_styles', 12 );
  * Remove the underline after the widgets titles
  */
 function azera_shop_luxury_widgets_before_title() {
-	echo '<h2 class="widget-title">';
+	return '<h2 class="widget-title">';
 }
 add_filter( 'azera_shop_widgets_before_title','azera_shop_luxury_widgets_before_title' );
 
@@ -67,7 +67,7 @@ add_filter( 'azera_shop_widgets_before_title','azera_shop_luxury_widgets_before_
  * Remove the underline after the widgets titles
  */
 function azera_shop_luxury_widgets_after_title() {
-	echo '</h2>';
+	return '</h2>';
 }
 add_filter( 'azera_shop_widgets_after_title','azera_shop_luxury_widgets_after_title' );
 
