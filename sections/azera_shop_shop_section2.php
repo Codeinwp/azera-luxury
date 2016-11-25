@@ -33,26 +33,28 @@ if ( class_exists( 'WooCommerce' ) ) {
 					<?php
 				}
 
-				if ( class_exists( 'WooCommerce' ) ):
+				if ( class_exists( 'WooCommerce' ) ) :
 					?>
 
 					<div class="home-shop-product">
 						<div class="azera_shop_products_container">
 							<?php
 							if ( $cat == 'all' ) {
-								$args = array( 'post_type'      => 'product',
-								               'stock'          => 1,
-								               'posts_per_page' => $nb_of_products,
-								               'orderby'        => 'date',
-								               'order'          => 'DESC'
-								);
-							} else {
-								$args = array( 'post_type'      => 'product',
+								$args = array(
+								'post_type'      => 'product',
 								               'stock'          => 1,
 								               'posts_per_page' => $nb_of_products,
 								               'orderby'        => 'date',
 								               'order'          => 'DESC',
-								               'product_cat'    => $cat
+								);
+							} else {
+								$args = array(
+								'post_type'      => 'product',
+								               'stock'          => 1,
+								               'posts_per_page' => $nb_of_products,
+								               'orderby'        => 'date',
+								               'order'          => 'DESC',
+								               'product_cat'    => $cat,
 								);
 							}
 							$loop = new WP_Query( $args );
