@@ -58,6 +58,14 @@ add_action( 'wp_enqueue_scripts', 'azera_shop_luxury_enqueue_styles', 12 );
 /**
  * Remove the underline after the widgets titles
  */
+function azera_shop_luxury_widgets_before_title() {
+	echo '<h2 class="widget-title">';
+}
+add_filter( 'azera_shop_widgets_before_title','azera_shop_luxury_widgets_before_title' );
+
+/**
+ * Remove the underline after the widgets titles
+ */
 function azera_shop_luxury_widgets_after_title() {
 	echo '</h2>';
 }
