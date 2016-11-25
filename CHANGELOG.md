@@ -1,4 +1,8 @@
 
+### 1.0.6 - 25/11/2016
+**Changes:** 
+- Update style.css
+
 ### 1.0.5 - 25/11/2016
 **Changes:** 
 - Added grunt
