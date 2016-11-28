@@ -35,13 +35,18 @@ ul {
   list-style-type: none;
   padding-left: 0; }
 
-.content-area ul:not(.nav):not(.page-numbers):not(.tabs):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu):not(.sub-menu):not(.products) li:before {
+.content-area ul:not(.nav):not(.page-numbers):not(.tabs):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu):not(.sub-menu):not(.products) > li:before {
   content: "\f105";
   font-family: 'FontAwesome';
   display: inline-block;
   margin-left: 0;
   width: 15px;
   color: #e0b48e; }
+
+.content-area ol > li:before {
+  content: "";
+  display: none;
+}
 
 blockquote {
   font-style: italic;
