@@ -4,7 +4,7 @@ Theme URI: http://themeisle.com/themes/azera-shop/
 Author: ThemeIsle
 Author URI: http://themeisle.com/
 Description: Azera Shop Luxury is an elegant free WooCommerce WordPress theme, perfect for building an one page online store. Azera Shop is ecommerce ( Woo Commerce ) Compatible, WPML, RTL,Photo Gallery Grid, Contact Form 7, Meta Slider,SiteOrigin Page Builder, SEO Friendly and with parallax effect, full screen image is one of the best e-commerce themes and a good storefront alternative. The flat and simple design based on bootstrap template can work great for any business / startup, blog or photography site.
-Version: 1.0.4
+Version: 1.0.6
 Template: azera-shop
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -45,28 +45,39 @@ ul {
 
 blockquote {
   font-style: italic;
-  border-color: #e0b48e; }
+  border-color: #e0b48e;
+}
 
 .entry-content blockquote p {
-  color: #e0b48e; }
+  color: #e0b48e;
+}
 
 /* Intro */
 .header-style-one .intro-section {
-  margin-top: 60px; }
+  margin-top: 60px;
+}
 
 h1.intro {
   font-size: 36px;
   line-height: initial;
-  text-align: center; }
+  text-align: center;
+}
 
 .overlay-layer-wrap {
-  background: none; }
+  background: none;
+}
 
 #intro-section {
-  text-align: center; }
-  #intro-section #intro_section_text_1, #intro-section #intro_section_text_2 {
-    text-align: center; }
+  text-align: center;
+}
 
+#intro-section #intro_section_text_1, #intro-section #intro_section_text_2 {
+  text-align: center;
+}
+
+#intro-section #intro_section_text_1.white-text {
+  color: #1e3046;
+}
 .header-style-one .intro-section h5, .second-header-layout .intro-section h5 {
   font-family: 'Questrial', serif;
   color: #717171; }
@@ -322,7 +333,7 @@ h1.intro {
     width: 107% !important;
     height: 34px;
     overflow: hidden;
-    background: url(assets/img/arrow.jpg) no-repeat 94% #FFF;
+    background: url(images/arrow.jpg) no-repeat 94% #FFF;
     -webkit-appearance: none;
     border-radius: 0;
     padding: 5px !important;
@@ -504,7 +515,7 @@ h1.intro {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   background-color: #FFF;
-  background-image: url("assets/img/separator.png");
+  background-image: url("images/separator.png");
   content: '';
   display: block;
   width: 85px;
@@ -964,7 +975,7 @@ h1.single-title {
   width: 106%;
   height: 34px;
   overflow: hidden;
-  background: url(assets/img/arrow.jpg) no-repeat 94% #FFF;
+  background: url(images/arrow.jpg) no-repeat 94% #FFF;
   -webkit-appearance: none;
   border-radius: 0;
   padding: 5px; }
