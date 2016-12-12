@@ -4,7 +4,7 @@ Theme URI: http://themeisle.com/themes/azera-shop/
 Author: ThemeIsle
 Author URI: http://themeisle.com/
 Description: Azera Shop Luxury is an elegant free WooCommerce WordPress theme, perfect for building an one page online store. Azera Shop is ecommerce ( Woo Commerce ) Compatible, WPML, RTL,Photo Gallery Grid, Contact Form 7, Meta Slider,SiteOrigin Page Builder, SEO Friendly and with parallax effect, full screen image is one of the best e-commerce themes and a good storefront alternative. The flat and simple design based on bootstrap template can work great for any business / startup, blog or photography site.
-Version: 1.0.6
+Version: 1.0.7
 Template: azera-shop
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -35,13 +35,18 @@ ul {
   list-style-type: none;
   padding-left: 0; }
 
-.content-area ul:not(.nav):not(.page-numbers):not(.tabs):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu):not(.sub-menu):not(.products) li:before {
+.content-area ul:not(.nav):not(.page-numbers):not(.tabs):not(.azera-luxury-pager):not(.client-logos):not(.primary-menu):not(.sub-menu):not(.products) > li:before {
   content: "\f105";
   font-family: 'FontAwesome';
   display: inline-block;
   margin-left: 0;
   width: 15px;
   color: #e0b48e; }
+
+.content-area ol > li:before {
+  content: "";
+  display: none;
+}
 
 blockquote {
   font-style: italic;
@@ -350,22 +355,29 @@ h1.intro {
     border-radius: 0;
     font-weight: 400;
     padding-right: 15px;
-    width: 105px; }
+    width: 105px;
+    padding-right: 15px; }
   .woocommerce .quantity .arrow-up, .woocommerce .quantity .arrow-down {
-    position: absolute;
-    bottom: 22px;
-    right: 0;
-    height: 22px;
-    width: 32px;
-    border-right: 1px solid #ddd;
-    background: #FFF;
-    color: #808080;
-    border-top: 1px solid #E7E7E7;
-    border-left: 1px solid #E7E7E7;
-    text-align: center; }
-    .woocommerce .quantity .arrow-up .dashicons, .woocommerce .quantity .arrow-down .dashicons {
+      position: absolute;
+      bottom: 16px;
+      right: initial;
+      margin-left: -1px;
+      height: 16px;
+      width: 32px;
+      border-right: 1px solid #ddd;
+      background: #FFF;
+      color: #808080;
+      border-top: 1px solid #E7E7E7;
+      border-left: 1px solid #E7E7E7;
+      text-align: center;
+      margin-left: -32px;}
+  .woocommerce .quantity .arrow-up .dashicons,
+  .woocommerce .quantity .arrow-down .dashicons {
       font-size: 12px;
-      line-height: 22px; }
+      line-height: 16px;
+      font-family: dashicons;
+      height: 16px;
+  }
   .woocommerce .quantity .arrow-down {
     bottom: 0;
     border-bottom: 1px solid #E7E7E7; }
@@ -1026,5 +1038,12 @@ body {
   margin: 0;
   padding: 0;
   line-height: 23px; }
+
+@media (max-width: 767px) {
+    .woocommerce .cart_item .quantity input.qty {
+        width: 80px;
+        padding-right: 16px;
+    }
+}
 
 /*# sourceMappingURL=style.css.map */

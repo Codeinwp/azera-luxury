@@ -18,5 +18,12 @@ The exceptions to this license are as follows:
 
 # Images
 
-   background.jpg: https://pixabay.com/en/stainless-background-white-bracelet-878357/ (CC0 License)
+    License:
+    All pixabay.com images are licensed under the terms of the Creative Commons Zero, http://creativecommons.org/publicdomain/zero/1.0/
+
+    Images from screenshot:
+        * https://pixabay.com/en/stainless-background-white-bracelet-878357/
+
+    File:   /assets/img/background-images/background.jpg
+    Source: https://pixabay.com/en/stainless-background-white-bracelet-878357/
    
