@@ -1,4 +1,10 @@
 
+### 1.0.7 - 12/12/2016
+**Changes:** 
+- Update readme file images license
+- Fixed issues with mixed lists
+- Fixed issue with broken quantity input on cart page
+
 ### 1.0.6 - 25/11/2016
 **Changes:** 
 - Update style.css
