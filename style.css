@@ -573,7 +573,7 @@ h1.intro {
   height: 200px;
   position: relative;
   display: block;
-  margin-top: 9px;
+  margin-top: 0;
   background-size: cover; }
   .archive-top .section-overlay-layer {
     background: rgba(0, 0, 0, 0.5);
